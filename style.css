@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
 
 .ibg {
-  background: gray;
+  background: url(https://www.timeshighereducation.com/student/sites/default/files/styles/default/public/why-study-architecture_0.jpg?itok=cgMcrCfY);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .icd {
@@ -10,8 +14,8 @@
     background: linear-gradient(to right, #e786ff71, #9bdfff67);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.3px);
-    -webkit-backdrop-filter: blur(4.3px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(1px);
     border: 1px solid rgba(255, 255, 255, 1);
 }
   

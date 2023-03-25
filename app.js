@@ -22,10 +22,10 @@ setInterval(function multiply() {
     let sqft1 = 9500;
     let cost = sqft * sqft1;
 
-    document.getElementById("ilw1").innerHTML = "Total sqft : "+ ilw1+"ft²";
-    document.getElementById("ilw2").innerHTML = "Total sqft : "+ ilw2+"ft²";
-    document.getElementById("ilw3").innerHTML = "Total sqft : "+ ilw3+"ft²";
-    document.getElementById("ilw4").innerHTML = "Total sqft : "+ ilw4+"ft²";
+    document.getElementById("ilw1").innerHTML = " = "+" "+ ilw1+"ft²";
+    document.getElementById("ilw2").innerHTML = " = "+" "+ ilw2+"ft²";
+    document.getElementById("ilw3").innerHTML = " = "+" "+ ilw3+"ft²";
+    document.getElementById("ilw4").innerHTML = " = "+" "+ ilw4+"ft²";
 
     document.getElementById("sqft").innerHTML = "Total sq. ft : " + sqft+"ft²";
     document.getElementById("sqft1").innerHTML = "Cost for 1 sq. ft : Rs " + sqft1 +".00";
