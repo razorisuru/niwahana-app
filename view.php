@@ -41,13 +41,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 	background-repeat: no-repeat;">
 	
 	
-		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-4 text-center">
-			<h3 class="text-center p-2 text-light mt-3 rounded-3 text-bg-success">WEB Application for Niwahana</h3>  
-			</div>
-			<div class="col-md-4"></div>
-		</div>
+		
 	
 
 	<div class="mt-5 row container">
@@ -55,7 +49,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 		<div class="col-md-10 ">
 	
 				<div class="float">
-				<a class="btn btn-warning" href="index.php"><i class="bi bi-house-door-fill"></i> Home</a>
 				<!-- <?php
 				global $role;
 				$role = $_SESSION['role'];
@@ -65,13 +58,34 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 					}
 				?> -->
 				</div>
-				<div class="fmt d-flex float-end">
-					<a class="btn btn-danger" href="logout.php"><i class="bi bi-box-arrow-left"></i> Logout</a>
-				</div>
+				
 
 		<br/>
 	</div>
 		
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-secondary">
+			<div class="container">
+					<a class="navbar-brand btn btn-warning" href="index.php"><i class="bi bi-house-door-fill"></i> Home</a>
+					<div class="row">
+						<div class="text-bg-light text-center rounded-2" id="sqft"></div>
+                        <div class="text-bg-light text-center rounded-2" id="sqft1"></div>
+                        <div class="text-bg-light text-center rounded-2" id="cost"></div>
+					</div>
+					<div class=" d-flex float-end">
+						<a class="btn btn-danger" href="logout.php"><i class="bi bi-box-arrow-left"></i> Logout</a>
+					</div>
+					
+			</div>	
+			
+		</nav>
+	
+	<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10  text-center">
+			<h3 class="text-center p-2 text-light mt-3 rounded-3 text-bg-success ">WEB Application for Niwahana</h3>  
+			</div>
+			<div class="col-md-1"></div>
+		</div>
 
 	<div class="row 1stphase">
 		<div class="col-md-1"></div>
@@ -126,10 +140,9 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                               <!-- <input class="btn" type="submit" name="submit" /> -->
                             </form>
                             <div class="text-center card-footer"></div>
-                            <div class="">
-                              <div id="sqft"></div>
-                              <div id="sqft1"></div>
-                              <div id="cost"></div>
+                            <div class="col-md-4">
+                              
+							
                             </div>
                             <button onclick="sendData()">Send Data</button>
                             <div id="response"></div>
@@ -154,41 +167,25 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 							<div class="col-md-3">
 								<div class="text-center">
 									<img src="img/placeholder-image.webp" class="img-fluid" alt="...">
-									<div class="btn-group-toggle" data-toggle="buttons">
-										<label class="btn btn-secondary active mt-1">
-											<input type="checkbox" checked autocomplete="off"> Select
-										</label>
-									</div>
+									
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="text-center">
 									<img src="img/placeholder-image.webp" class="img-fluid" alt="...">
-									<div class="btn-group-toggle" data-toggle="buttons">
-										<label class="btn btn-secondary active mt-1">
-											<input type="checkbox" checked autocomplete="off"> Select
-										</label>
-									</div>
+									
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="text-center">
 									<img src="img/placeholder-image.webp" class="img-fluid" alt="...">
-									<div class="btn-group-toggle" data-toggle="buttons">
-										<label class="btn btn-secondary active mt-1">
-											<input type="checkbox" checked autocomplete="off"> Select
-										</label>
-									</div>
+									
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="text-center">
 									<img src="img/placeholder-image.webp" class="img-fluid" alt="...">
-									<div class="btn-group-toggle" data-toggle="buttons">
-										<label class="btn btn-secondary active mt-1">
-											<input type="checkbox" checked autocomplete="off"> Select
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -206,5 +203,9 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 	<script src="app.js"></script>
+	<script>
+var myvalue = gg;
+$("#mydata").val(myvalue);
+</script>
 </body>
 </html>

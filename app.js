@@ -32,34 +32,5 @@ setInterval(function multiply() {
     document.getElementById("cost").innerHTML = "Total Cost : Rs " + cost+".00";
   }, 500);
 
-  function sendData() {
-    // Get the value of your JavaScript variable
-    const phpsqft = sqft;
-    const phpcost = cost;
-    
-    // Create a new AJAX request
-    const xhttp = new XMLHttpRequest();
-    
-    // Set the request method and URL
-    xhttp.open("POST", db.php, true);
-    
-    // Set the request header to indicate that we are sending JSON data
-    xhttp.setRequestHeader("Content-type", "application/json");
-    
-    // Define what should happen when the response comes back
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        // Display the response message
-        alert(this.responseText);
-      }
-    };
-    
-    // Create a JSON object with the value of your JavaScript variable
-    const data1 = JSON.stringify({phpsqft: phpsqft});
-    const data2 = JSON.stringify({phpcost: phpcost});
-    
-    // Send the request with the JSON data as the payload
-    xhttp.send(data1);
-    xhttp.send(data2);
-  }
+  
   
