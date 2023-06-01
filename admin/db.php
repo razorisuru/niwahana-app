@@ -3,7 +3,7 @@
 $host = 'localhost';  // server 
 $user = 'root';   
 $pass = "";   
-$database = 'app';   //Database Name  
+$database = 'niwahana';   //Database Name  
 
 // establishing connection
   $conn = mysqli_connect($host,$user,$pass,$database);   
