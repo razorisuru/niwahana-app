@@ -35,9 +35,14 @@ if(isset($_POST['submit'])) {
 			echo "<div class='row'><div class='col-md-3'></div><div class='col-md-6 text-center justify-content-center'><p class='text-danger p-1 fs-3 text-uppercase alert alert-danger rounded-5'><br/>Invalid username or password.<br/><br/><a class='btn btn-primary' href='login.php'><i class='bi bi-house-door-fill'></i> Go back</a><br/><br/></p></div><div class='col-md-3'></div></div>";
 	
 		}
-
+    global $role;
+		$role = $_SESSION['role'];
 		if(isset($_SESSION['valid'])) {
-			header('Location: index.php');			
+        if($role == "super_admin") {
+			    header('Location: index.php');	
+        }else{
+			    header('Location: view.php');	
+        }		
 		}
 	}
 } else {
