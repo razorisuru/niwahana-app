@@ -1,0 +1,8 @@
+.image-box {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+      
+.image-box:hover {
+    transform: scale(1.2);
+}

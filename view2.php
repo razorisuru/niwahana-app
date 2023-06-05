@@ -32,9 +32,9 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link href="css/view.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
-	<?php
-	include("header.php");
-?>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body style="background: url(img/bg.jpg);
@@ -49,21 +49,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 	<div class="mt-5 row container">
 		<div class="col-sm-1"></div>
 		<div class="col-sm-10 ">
-	
-				<div class="float">
-				<!-- <?php
-				global $role;
-				$role = $_SESSION['role'];
-					// echo $role;
-					if ($role == 'super_admin' || $role == 'admin'){
-						echo"<a class='btn btn-outline-success' href='add.html'><i class='bi bi-file-plus-fill'></i> Add New Data</a>";
-					}
-				?> -->
-				</div>
-				
-
-		<br/>
-	</div>
+			<br/>
+		</div>
 		
 		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-secondary">
 			<div class="container">
@@ -79,29 +66,25 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 			
 		</nav>
 
-		
+		<div class="container">
 
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
 
-
-
-
-
-
-
-
-	
-	<div class="row">
-			<div class="col-sm-1"></div>
-			<div class="col-sm-10  text-center">
-			<h3 class="text-center p-2 text-light mt-3 rounded-3 text-bg-success ">WEB Application for Niwahana</h3>  
-			</div>
-			<div class="col-sm-1"></div>
-		</div>
-
-	<div class="row 1stphase">
-		<div class="col-sm-1"></div>
-		<div class="col-sm-10">
-		<div class="card icd">
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  <div class="">
+	  <div class="card icd">
                     <div class="card-header">
                         <h4 class="text-center">1st phase</h4>
                     </div>
@@ -162,14 +145,13 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                     </div>
                 </div>
 		</div>
-		<div class="col-sm-1"></div>
-	</div>
-	
-
-	<div class="row mt-5 2ndphase">
-		<div class="col-sm-1"></div>
-		<div class="col-sm-10">
-		<div class="card icd">
+	  </div>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+	  <div class="">
+	  <div class="card icd">
                     <div class="card-header">
                         <h4 class="text-center">2nd phase</h4>
                     </div>
@@ -212,14 +194,31 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                     </div>
                 </div>
 		</div>
-		<div class="col-sm-1"></div>
-	</div>
+	  </div>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+
+		
+
+
+
+
+
+
+
+
+
+	
+	
 	
 		
 
-	<?php
-	include("footer.php");
-?>
+	
 	<script src="app.js"></script>
 	
 </body>

@@ -1,7 +1,9 @@
-.icardbg {
-    background: yellow;
-    box-shadow: 0 4px 30px rgb(0, 0, 0);
-    backdrop-filter: blur(5.1px);
-    -webkit-backdrop-filter: blur(5.1px);
-    border: 1px solid rgb(255, 255, 255);
+.btnlogin {
+    color: #ffffff !important;
+    background: #5050ff !important;
+}
+
+.btnlogin:hover {
+    color: #220000 !important;
+    background: #7474fa !important;
 }

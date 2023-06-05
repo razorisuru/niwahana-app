@@ -77,10 +77,10 @@ if(isset($_POST['submit'])) {
             </div> -->
 			<br>
             <!-- Submit button -->
-            <button type="submit" name="submit" class="btn btn-primary btn-block mt-4 mb-4">
+            <button type="submit" name="submit" class="btn btnlogin btn-block mt-4 mb-4">
               Sign up
             </button>
-			<a href="index.php" class="btn btn-primary btn-block mt-4 mb-4">
+			<a href="index.php" class="btn btnlogin btn-block mt-4 mb-4">
               Go Back to Login
 			</a>
 
