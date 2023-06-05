@@ -3,9 +3,12 @@
 <head>
 	<title>Homepage</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link href="css/index.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
+	<link href="style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<?php
+	include("header.php");
+?>
 </head>
 
 <body class="homee" >
@@ -23,13 +26,13 @@
 	<div class="row mt-5">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
-			<div style="background: rgba(146, 100, 254, 0.432);
-    					border-radius: 16px;
+			<div style="background: #5050ff;
+						background-size: cover;
+    					background-position: center center;
     					box-shadow: 0 4px 30px rgb(0, 0, 0);
 						backdrop-filter: blur(5.1px);
 						-webkit-backdrop-filter: blur(5.1px);
-						border: 1px solid rgb(255, 255, 255);
-						height: 500px;" class="card icardbg lgbg">
+						height: 500px;" class="card rounded-0">
 				<div class="card-body lgbg text-center">
 					<div class="card-title ">
 					</div>
@@ -44,25 +47,23 @@
 							?>
 								<div class="row ">
 									<div class="col-md-2"></div>
-									<div class="col-md-8 bg-primary-subtle border border-primary-subtle rounded-4 p-4">
-										<h3 class="text-primary">Welcome <?php echo $_SESSION['name'] ?></h3>
+									<div style='background-color:#010439; color:#ff6162;' class="col-md-8 border border-primary-subtle rounded-4 p-4">
+										<h3 style='color:#ff6162;'>Welcome <?php echo $_SESSION['name'] ?></h3>
 										<?php 
 											if ($role == 'super_admin'){
-												echo"<a class='btn btn-warning' href='admin/includes/home.php'>Admin Dashboard</a>";
+												echo"<a class='btn btnc' href='admin/includes/home.php'>Admin Dashboard</a>";
 											}
 										?>
 									</div>
 									<div class="col-md-2"></div>
 								</div>		
 								<br/><br/><br/><br/>
-								<a class="btn btn-lg btn-success" href='view.php'><i class="bi bi-collection"></i> View App</a>
+								<a class="btn btnviewapp" href='view.php'><i class="bi bi-collection"></i> View App</a>
 								<br/><br/><br/><br/><br/>
 								<a class="btn btn-danger" href='logout.php'><i class="bi bi-box-arrow-left"></i> Logout</a>
 							<?php	
 							} else {
-								echo "<p class='text-danger bg-success-subtle rounded-1 p-2'>You must be logged in to view this page</p>";
-								echo "<img src='img/welcome.png' class='img-fluid' width='650'>";
-								echo "<br/><br/><a class='btn btn-success' href='login.php'>Login</a>  <a class='btn btn-info' href='register.php'>Register</a>";
+								header('Location: login.php');
 							}
 							?>
 				</div>
@@ -80,6 +81,8 @@
   </div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<?php
+	include("footer.php");
+?>	
 </body>
 </html>

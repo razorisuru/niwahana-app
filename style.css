@@ -11,11 +11,12 @@
 .icd {
     /* background: linear-gradient(to right, #b6aaff, #9bf8ff);
     border-radius: 10px; */
-    background: linear-gradient(to right, #e786ff71, #9bdfff67);
-    border-radius: 16px;
+    /* background: linear-gradient(to right, #e786ff71, #9bdfff67); */
+    /* border-radius: 16px; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(1px);
-    border: 1px solid rgba(255, 255, 255, 1);
+    /* border: 1px solid rgba(255, 255, 255, 1); */
 }
-  
+
+

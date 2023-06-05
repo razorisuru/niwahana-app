@@ -27,8 +27,7 @@ a:link {
 }
 
 .icardbg {
-    background: rgba(146, 100, 254, 0.432);
-    border-radius: 16px;
+    background: yellow;
     box-shadow: 0 4px 30px rgb(0, 0, 0);
     backdrop-filter: blur(5.1px);
     -webkit-backdrop-filter: blur(5.1px);
@@ -82,6 +81,26 @@ th, td {
   background: #001f3d;
 }
 
+.btnc {
+  background: white !important;
+}
+
+.btnc:hover {
+  background: rgb(255, 133, 133) !important;
+  color: #010439 !important;
+}
+
+.btnviewapp {
+  background: #ffffff !important;
+  color: #000000 !important;
+  padding: 50px 170px !important;
+  font-size: 20px !important;
+}
+
+.btnviewapp:hover {
+  background: #f5ffc7 !important;
+  color: #5050ff !important;
+}
 
 .homee {
     min-height: 100vh;
