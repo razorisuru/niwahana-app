@@ -69,7 +69,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 			<div class="container">
 					<a class="navbar-brand btn btn-warning" href="index.php"><i class="bi bi-house-door-fill"></i> Home</a>
 					<div class="row">
-                        <div class="text-bg-light text-center rounded-2" id="cost"></div>
+					<p class="text-bg-light text-center rounded-2">Final cost : <span id="fcost3">0.00</span></p>
 					</div>
 					<div class=" d-flex float-end">
 						<a class="btn btn-danger" href="logout.php"><i class="bi bi-box-arrow-left"></i> Logout</a>
@@ -154,7 +154,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                             <div class="col-md-4">
 							<div class="text-bg-light rounded-2" id="sqft"></div>
                         	<div class="text-bg-light rounded-2" id="sqft1"></div>
-							
+							<div class="text-bg-light rounded-2" id="cost"></div>
                             </div>
                             <button onclick="sendData()">Send Data</button>
                             <div id="response"></div>
@@ -171,32 +171,32 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 		<div class="col-sm-10">
 		<div class="card icd">
                     <div class="card-header">
-                        <h4 class="text-center">2nd phase</h4>
+                        <h4 class="text-center">Architecture Theme</h4>
                     </div>
                     <div class="card-body">
                       <div class="phase2">
                           <div class="row container-fluid">
 							<div class="col-md-3">
 								<div class="text-center">
-									<img src="img/1.png" class="img-fluid image-box" alt="Image 1" onclick="updateTotal(0.1)">
+									<img src="img/2.1.png" class="img-fluid image-box" alt="Image 1" onclick="updateTotal(0.1)">
 									
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="text-center">
-									<img src="img/2.png" class="img-fluid image-box" alt="..." onclick="updateTotal(0.2)">
+									<img src="img/2.2.png" class="img-fluid image-box" alt="..." onclick="updateTotal(0.2)">
 									
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="text-center">
-									<img src="img/3.png" class="img-fluid image-box" alt="..." onclick="updateTotal(0.3)">
+									<img src="img/2.3.png" class="img-fluid image-box" alt="..." onclick="updateTotal(0.3)">
 									
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="text-center">
-									<img src="img/4.png" class="img-fluid image-box" alt="..." onclick="updateTotal(0.4)">
+									<img src="img/2.4.png" class="img-fluid image-box" alt="..." onclick="updateTotal(0.4)">
 									
 								</div>
 							</div>
@@ -214,7 +214,94 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 		</div>
 		<div class="col-sm-1"></div>
 	</div>
+
+	<div class="row mt-5 3rdphase">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+		<div class="card icd">
+                    <div class="card-header">
+                        <h4 class="text-center">Type of Lands</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="phase3">
+                          <div class="row container-fluid">
+							<div class="col-md-4">
+								<div class="text-center">
+									<img src="img/3.1.png" class="img-fluid image-box" alt="" onclick="updateTotal2(0.0)">
+									<p>Flat Land</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="text-center">
+									<img src="img/3.2.png" class="img-fluid image-box" alt="..." onclick="updateTotal2(0.1)">
+									<p>Upper Slope</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="text-center">
+									<img src="img/3.3.png" class="img-fluid image-box" alt="..." onclick="updateTotal2(0.2)">
+									<p>Lower Slope</p>
+								</div>
+							</div>
+						  </div>
+						
+						</div>
+						
+								<div class="text-center card-footer">
+								<p>Final cost : <span id="fcost2">0.00</span></p>
+								</div>
+								
+								  </div>
+						</div>
+					</div>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
 	
+		<div class="row mt-5 4thphase">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+		<div class="card icd">
+                    <div class="card-header">
+                        <h4 class="text-center">Employment Method</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="phase4">
+                          <div class="row container-fluid">
+							<div class="col-md-3">
+								<div class="text-center">
+									<button class="btn btn-primary" onclick="updateTotal3(0.1)">Daily Paid</button>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="text-center">
+									<button class="btn btn-primary" onclick="updateTotal3(0.2)">Contract Workers</button>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="text-center">
+									<button class="btn btn-primary" onclick="updateTotal3(0.3)">PieceWork</button>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="text-center">
+									<button class="btn btn-primary" onclick="updateTotal3(0.4)">Through Supervisor</button>
+								</div>
+							</div>
+						  </div>
+						
+						</div>
+						
+								<div class="text-center card-footer">
+								<!-- <p>Final cost : <span id="fcost3">0.00</span></p> -->
+								</div>
+								
+								  </div>
+						</div>
+					</div>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
 		
 
 	<?php

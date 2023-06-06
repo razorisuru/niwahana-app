@@ -38,11 +38,21 @@ setInterval(function multiply() {
 
 }, 500);
 
-
 function updateTotal(percentage) {
   let cost = parseFloat(document.getElementById('cost').textContent.split("Rs ")[1]);
-  let fcost = cost * percentage;
+  let fcost = cost + (cost * percentage);
   document.getElementById("fcost").innerHTML = " Rs " + fcost + ".00";
+}
+function updateTotal2(percentage) {
+  let fcost = parseFloat(document.getElementById('fcost').textContent.split("Rs ")[1]);
+  let fcost2 = fcost + (fcost * percentage);
+  document.getElementById("fcost2").innerHTML = " Rs " + fcost2 + ".00";
+}
+
+function updateTotal3(percentage) {
+  let fcost2 = parseFloat(document.getElementById('fcost2').textContent.split("Rs ")[1]);
+  let fcost3 = fcost2 + (fcost2 * percentage);
+  document.getElementById("fcost3").innerHTML = " Rs " + fcost3 + ".00";
 }
 
   
