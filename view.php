@@ -38,7 +38,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 ?>
 </head>
 
-<body style="height: 200vh;">
+<body class="main-container" style="height: 200vh;">
 
 
     <!-- navbar -->
@@ -51,13 +51,15 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
-                    <i class="bi bi-list" style="color:#fff; font-size:28px;"></i>
+                    <i class="fa-solid fa-bars fa-flip" style="color:#fff; font-size:28px;"></i>
+                    <!-- <i class="bi bi-list" style="color:#fff; font-size:28px;"></i> -->
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="view.php">Home</a>
+                        <a class="nav-link active text-light" aria-current="page" href="view.php"><i
+                                class="fa-solid fa-house"></i> Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#">Features</a>
@@ -69,20 +71,41 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                         Welcome <?php echo $_SESSION['name'] ?>
                     </button>
                     <ul class="btnprofiledropdown dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="logout.php"><span
-                                    class="btnprofiledropdownlogout">Logout</span> </a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#profile" href="#">Profile <i class="fa-solid fa-user fa-flip"></i></a></li>
+                        <li><a class="dropdown-item" href="logout.php"><span class="btnprofiledropdownlogout">Logout <i
+                                        class="fa-solid fa-arrow-right-from-bracket fa-flip"></i></span> </a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Modal -->
+<div class="modal fade" id="profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $_SESSION['name'] ?>'s Profile <i class="fa-solid fa-user fa-flip"></i></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="img/rz.png" class="img-thumbnail" width="80" alt="...">
+        Full Name : <?php echo $_SESSION['name'] ?><br>
+        E-Mail : <?php echo $_SESSION['email'] ?><br>
+        Role : <?php echo $_SESSION['role'] ?><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- phase 1 -->
     <div class="container main-container">
         <div class="card mt-5 p1css cardc">
             <div class="card-header">
-                <h4 class="text-center">Architecture Theme</h4>
+                <h4 class="text-center">Measures</h4>
             </div>
             <div class="card-body">
                 <form id="frm1" method="post" action="">
@@ -138,40 +161,44 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
         </div>
 
         <!-- phase 2 -->
-        <div class="card mt-5 cardc">
+        <div class="card mt-5 cardc p1css">
             <div class="card-header">
-                <h4 class="text-center">Measures</h4>
+                <h4 class="text-center">Architecture Theme</h4>
             </div>
             <div class="card-body">
                 <div class="phase2">
                     <div class="row container-fluid">
                         <div class="col-md-3">
                             <div class="text-center">
-                                <img src="img/2.1.png" class="img-fluid image-box" alt="Image 1"
+                                <img src="img/2.1.png" width="400" class="img-fluid image-box" alt="Image 1"
                                     onclick="updateTotal(0.1)">
-                                <p>Ex 4</p>
+                                <h4 class="mt-4">Ex 4</h4>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="text-center">
-                                <img src="img/2.2.png" class="img-fluid image-box" alt="..." onclick="updateTotal(0.2)">
-                                <p>Ex 4</p>
+                                <img src="img/2.2.png" width="400" class="img-fluid image-box" alt="..."
+                                    onclick="updateTotal(0.2)">
+                                <h4 class="mt-4">Ex 4</h4>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="text-center">
-                                <img src="img/2.3.png" class="img-fluid image-box" alt="..." onclick="updateTotal(0.3)">
-                                <p>Ex 4</p>
+                                <img src="img/2.3.png" width="400" class="img-fluid image-box" alt="..."
+                                    onclick="updateTotal(0.3)">
+                                <h4 class="mt-4">Ex 4</h4>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="text-center">
-                                <img src="img/2.4.png" class="img-fluid image-box" alt="..." onclick="updateTotal(0.4)">
-                                <p>Ex 4</p>
+                                <img src="img/2.4.png" width="400" class="img-fluid image-box" alt="..."
+                                    onclick="updateTotal(0.4)">
+                                <h4 class="mt-4">Ex 4</h4>
                             </div>
                         </div>
                         <div class="card-footer">
                             <p>Final cost : <span id="fcost">0.00</span></p>
+                            <p>Designed by Upeksha</p>
                         </div>
                     </div>
                 </div>
@@ -179,7 +206,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
         </div>
 
         <!-- phase 3 -->
-        <div class="card mt-5 cardc">
+        <div class="card mt-5 cardc p1css">
             <div class="card-header">
                 <h4 class="text-center">Type of Lands</h4>
             </div>
@@ -188,34 +215,36 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                     <div class="row container-fluid">
                         <div class="col-md-4">
                             <div class="text-center">
-                                <img src="img/3.1.png" class="img-fluid image-box" alt="" onclick="updateTotal2(0.1)">
-                                <p>Flat Land</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="text-center">
-                                <img src="img/3.2.png" class="img-fluid image-box" alt="..."
+                                <img src="img/3.1.png" width="300" class="img-fluid image-box" alt=""
                                     onclick="updateTotal2(0.1)">
-                                <p>Upper Slope</p>
+                                <h4 class="mt-4">Flat Land</h4>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="text-center">
-                                <img src="img/3.3.png" class="img-fluid image-box" alt="..."
+                                <img src="img/3.2.png" width="300" class="img-fluid image-box" alt="..."
+                                    onclick="updateTotal2(0.1)">
+                                <h4 class="mt-4">Upper Slope</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <img src="img/3.3.png" width="300" class="img-fluid image-box" alt="..."
                                     onclick="updateTotal2(0.2)">
-                                <p>Lower Slope</p>
+                                <h4 class="mt-4">Lower Slope</h4>
                             </div>
                         </div>
                     </div>
                     <div class="card-footer">
                         <p>Final cost : <span id="fcost2">0.00</span></p>
+                        <p>UI idea by Isuri</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- phase 4 -->
-        <div class="card mt-5 cardc">
+        <div class="card mt-5 cardc p1css">
             <div class="card-header">
                 <h4 class="text-center">Type of Lands</h4>
             </div>
@@ -225,19 +254,30 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                         <form>
                             <div class="row">
                                 <div class="col-lg-3"><label class="radio-inline">
-                                        <input type="radio" name="optradio" checked onclick="updateTotal3(0.1)">Daily
-                                        Paid
+                                        <input type="radio" name="optradio" checked onclick="updateTotal3(0.1)">
+                                        <b>Daily
+                                            Paid</b><br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore sequi est,
+                                        quae corporis cumque! Odit, necessitatibus?
                                     </label></div>
                                 <div class="col-lg-3"><label class="radio-inline">
-                                        <input type="radio" name="optradio" onclick="updateTotal3(0.2)">Contract
+                                        <input type="radio" name="optradio" onclick="updateTotal3(0.2)"> <b>Contract
+                                        </b><br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore sequi est,
+                                        quae corporis cumque! Odit, necessitatibus?
                                     </label></div>
                                 <div class="col-lg-3"><label class="radio-inline">
-                                        <input type="radio" name="optradio" onclick="updateTotal3(0.3)">Piece Work
+                                        <input type="radio" name="optradio" onclick="updateTotal3(0.3)"> <b>Piece
+                                            Work</b> <br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore sequi est,
+                                        quae corporis cumque! Odit, necessitatibus?
                                     </label>
                                 </div>
                                 <div class="col-lg-3"><label class="radio-inline">
-                                        <input type="radio" name="optradio" onclick="updateTotal3(0.4)">Through
-                                        Supervisor
+                                        <input type="radio" name="optradio" onclick="updateTotal3(0.4)"> <b>Through
+                                            Supervisor</b> <br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore sequi est,
+                                        quae corporis cumque! Odit, necessitatibus?
                                     </label>
                                 </div>
                             </div>

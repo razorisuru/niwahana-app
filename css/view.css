@@ -7,7 +7,7 @@
 }
       
 .image-box:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
 .btnprofile {
@@ -46,8 +46,12 @@
   }
 
   .p1css {
-    background-color: #E5E8B6 !important;
+    background-color: #d3d3d3 !important;
   }
+
+  /* .main-container {
+    background-color: #5050ff !important;
+  } */
 
   .cardc {
     filter: brightness(120%);

@@ -31,14 +31,15 @@ if(isset($_POST['submit'])) {
 			$_SESSION['name'] = $row['name'];
 			$_SESSION['id'] = $row['id'];
 			$_SESSION['role'] = $row['role'];
+			$_SESSION['email'] = $row['email'];
 		} else {
 			echo "<div class='row'><div class='col-md-3'></div><div class='col-md-6 text-center justify-content-center'><p class='text-danger p-1 fs-3 text-uppercase alert alert-danger rounded-5'><br/>Invalid username or password.<br/><br/><a class='btn btn-primary' href='login.php'><i class='bi bi-house-door-fill'></i> Go back</a><br/><br/></p></div><div class='col-md-3'></div></div>";
 	
 		}
-    global $role;
-		$role = $_SESSION['role'];
+    
+		
 		if(isset($_SESSION['valid'])) {
-        if($role == "super_admin") {
+        if($_SESSION['role'] == "super_admin") {
 			    header('Location: index.php');	
         }else{
 			    header('Location: view.php');	
@@ -65,7 +66,7 @@ if(isset($_POST['submit'])) {
                 <form name="form1" method="post" action="">
 
                   <div class="d-flex align-items-center mb-3 pb-1">
-                    <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                    <i class="fa-solid fa-house fa-2x me-3" style="color: #ff6162;"></i>
                     <span class="h1 fw-bold ">Niwahana Web App</span>
                   </div>
                   <div class="error"></div>
@@ -83,7 +84,7 @@ if(isset($_POST['submit'])) {
                         </div>
 
                   <div class="pt-1 mb-4">
-                    <button class="btn btnlogin btn-lg btn-block mt-2" type="submit" name="submit">Login</button>
+                    <button class="btn btnlogin btn-lg btn-block mt-2" type="submit" name="submit">Login <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i></button>
                   </div>
 
                   <a class="small text-muted" data-bs-toggle="modal" data-bs-target="#forgotpassword" href="#!">Forgot password?</a>

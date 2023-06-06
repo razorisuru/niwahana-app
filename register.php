@@ -12,6 +12,7 @@
 <body class="homee">
     <?php
 include("connection.php");
+include("header.php");
 
 if(isset($_POST['submit'])) {
 	$name = $_POST['name'];
@@ -82,10 +83,10 @@ if(isset($_POST['submit'])) {
                             <br>
                             <!-- Submit button -->
                             <button type="submit" name="submit" class="btn btnlogin btn-block mt-4 mb-4">
-                                Sign up
+                                Sign up <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
                             </button>
                             <a href="index.php" class="btn btnlogin btn-block mt-4 mb-4">
-                                Go Back to Login
+                                Go Back to Login <i class="fa-solid fa-backward fa-beat"></i>
                             </a>
 
                             <!-- Register buttons -->
