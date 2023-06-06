@@ -1,8 +1,57 @@
 .image-box {
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(10px 10px 10px rgb(88, 88, 88));
 }
       
 .image-box:hover {
     transform: scale(1.1);
 }
+
+.btnprofile {
+    background: #5050ff !important;
+    color: white !important;
+  }
+  
+  .btnprofile:hover {
+    background: #ff6162 !important;
+    /* color: #5050ff !important; */
+  }
+  .btnprofiledropdown {
+    background: #5050ff !important;
+    color: white !important;
+  }
+
+  .btnprofiledropdown li a {
+    background: #5050ff !important;
+    color: white !important;
+  }
+  
+  .btnprofiledropdown li a:hover {
+    background: #ff6162 !important;
+    /* color: #5050ff !important; */
+  }
+
+
+  /* .btnprofiledropdownlogout a:hover {
+    background: #ff6162 !important;
+    color: white !important;
+  } */
+
+  .navc {
+    background-color: #010439 !important;
+    color: #ffffff !important;
+  }
+
+  .p1css {
+    background-color: #E5E8B6 !important;
+  }
+
+  .cardc {
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(7px 7px 7px rgb(88, 88, 88));
+  }
+
