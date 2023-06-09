@@ -1,5 +1,10 @@
- <!-- Footer -->
+<?php session_start(); ?>
+<!-- Footer -->
 <?php  include "../header.php" ?>
+
+<?php
+  if ($_SESSION['role'] == 'super_admin'){
+?>
 
 <?php 
      if(isset($_GET['delete']))
@@ -12,6 +17,12 @@
          header("Location: home.php");
      }
               ?>
+
+<?php 
+    }else {
+      header('Location: ../../view.php');
+    }
+  ?>
 
   <!-- Footer -->
 <?php include "footer.php" ?>

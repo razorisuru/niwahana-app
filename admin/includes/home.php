@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!-- Header -->
 <?php include "../header.php"?>
 <body style="background: url(../../img/bg.jpg);
@@ -6,7 +7,9 @@
 	background-repeat: no-repeat;">
   
 
-
+<?php
+  if ($_SESSION['role'] == 'super_admin'){
+?>
   <div class="container">
     <h1 class="text-center" >ADMIN DASHBOARD</h1>
     <div class="row ">
@@ -20,6 +23,7 @@
     
 
     </div>
+    
 
         <table class="table table-primary rounded-4 mt-5 table-hover tablebg">
           <thead>
@@ -63,11 +67,18 @@
             </tbody>
         </table>
   </div>
+  
 
 <!-- a BACK button to go to the index page -->
 <div class="container text-center mt-5">
 
     <div>
+
+    <?php 
+    }else {
+      header('Location: ../../view.php');
+    }
+  ?>
 
 <!-- Footer -->
 <?php include "../footer.php" ?>

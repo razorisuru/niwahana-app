@@ -1,8 +1,13 @@
+<?php session_start(); ?>
 <!-- Header -->
 <?php  include '../header.php'?>
 <head>
 	<link href="css/style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
 </head>
+
+<?php
+  if ($_SESSION['role'] == 'super_admin'){
+?>
 
 <h1 class="text-center">User Details</h1>
   <div class="container">
@@ -53,6 +58,12 @@
   <div class="container text-center mt-5">
     <a href="home.php" class="btn btn-warning mt-5"> Back </a>
   <div>
+
+  <?php 
+    }else {
+      header('Location: ../../view.php');
+    }
+  ?>
 
 <!-- Footer -->
 <?php include "../footer.php" ?>
