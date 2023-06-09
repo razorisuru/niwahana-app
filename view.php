@@ -154,7 +154,7 @@ include_once("connection.php");
                         <p class="ilw4 po" id="ilw4"></p>
                     </section>
                     <!-- <button class="btn" type="button" onclick="multiply()">Calculate</button> -->
-                    <!-- <input class="btn" type="submit" name="submit" /> -->
+                    <input class="btn" type="submit" name="submit" value="Enter" />
                 </form>
                 <div class="card-footer">
                     <div class="rounded-2" id="sqft"></div>
@@ -313,7 +313,10 @@ include_once("connection.php");
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="app.js"></script>
+    <script src="insert.js"></script>
 
 </body>
 
