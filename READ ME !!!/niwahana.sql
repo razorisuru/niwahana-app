@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2023 at 04:25 PM
+-- Generation Time: Jun 09, 2023 at 07:19 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -18,8 +18,57 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `app`
+-- Database: `niwahana`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `details`
+--
+
+CREATE TABLE `details` (
+  `id` int(10) NOT NULL,
+  `Name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `LivingRooms` int(255) NOT NULL,
+  `LivingRoomSqFt` int(255) NOT NULL,
+  `Bedrooms` int(255) NOT NULL,
+  `BedroomsSqFt` int(255) NOT NULL,
+  `DiningRooms` int(255) NOT NULL,
+  `DiningRoomSqft` int(255) NOT NULL,
+  `BathRooms` int(255) NOT NULL,
+  `BathRoomSqFt` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `details`
+--
+
+INSERT INTO `details` (`id`, `Name`, `email`, `LivingRooms`, `LivingRoomSqFt`, `Bedrooms`, `BedroomsSqFt`, `DiningRooms`, `DiningRoomSqft`, `BathRooms`, `BathRoomSqFt`) VALUES
+(11, '$client', '$clientmail', 1, 2, 0, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `details2`
+--
+
+CREATE TABLE `details2` (
+  `id` int(10) NOT NULL,
+  `Name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `Quantity1` int(255) NOT NULL,
+  `Length1` int(255) NOT NULL,
+  `Width1` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `details2`
+--
+
+INSERT INTO `details2` (`id`, `Name`, `email`, `Quantity1`, `Length1`, `Width1`) VALUES
+(4, 'Amindu Sangeeth', 'amindusangeeth@gmail.com', 232, 232, 32);
 
 -- --------------------------------------------------------
 
@@ -44,34 +93,23 @@ INSERT INTO `login` (`id`, `name`, `email`, `role`, `username`, `password`) VALU
 (1, 'Isuru Bandara', 'isurubandara@gmail.com', 'super_admin', 'isuru', '827ccb0eea8a706c4c34a16891f84e7b'),
 (2, 'Idunil Bandara', 'idunilbandara@gmail.com', 'admin', 'idunil', '81dc9bdb52d04dc20036dbd8313ed055'),
 (3, 'Amindu Sangeeth', 'amindusangeeth@gmail.com', 'user', 'ami', '81dc9bdb52d04dc20036dbd8313ed055'),
-(4, 'Delete This user if you want', 'delete@gmail.com', 'user', 'delete_me', '81dc9bdb52d04dc20036dbd8313ed055');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `products`
---
-
-CREATE TABLE `products` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `qty` int(5) NOT NULL,
-  `price` decimal(10,2) NOT NULL,
-  `login_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`id`, `name`, `qty`, `price`, `login_id`) VALUES
-(13, 'Roti', 50, '20.00', 1),
-(14, 'Pizza', 10, '850.00', 1),
-(15, 'Cake', 33, '1350.00', 1);
+(4, 'Isuri Samaranayaka', 'isuri@gmail.com', 'user', 'isuri', '81dc9bdb52d04dc20036dbd8313ed055');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `details`
+--
+ALTER TABLE `details`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `details2`
+--
+ALTER TABLE `details2`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `login`
@@ -80,37 +118,26 @@ ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `products`
---
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `FK_products_1` (`login_id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `details`
+--
+ALTER TABLE `details`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `details2`
+--
+ALTER TABLE `details2`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT for table `products`
---
-ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `products`
---
-ALTER TABLE `products`
-  ADD CONSTRAINT `FK_products_1` FOREIGN KEY (`login_id`) REFERENCES `login` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
