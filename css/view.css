@@ -59,3 +59,22 @@
     filter: drop-shadow(7px 7px 7px rgb(88, 88, 88));
   }
 
+  .modi {
+    background-color: #7373ff !important;
+    color: #ffffff !important;
+  }
+
+  .btnclose {
+    background: #ffffff !important;
+    color: rgb(0, 0, 0) !important;
+  }
+
+  .btnclose:hover {
+    background: #ff6162 !important;
+    /* color: #5050ff !important; */
+  }
+
+  .modalcost {
+  background: #ff6162 !important;
+  /* color: #5050ff !important; */
+}

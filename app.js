@@ -36,6 +36,9 @@ setInterval(function multiply() {
   document.getElementById("sqft1").innerHTML = "Cost for 1 sq. ft : Rs " + sqft1 + ".00";
   document.getElementById("cost").innerHTML = "Total Cost : Rs " + cost + ".00";
 
+  document.getElementById("sqftmodal").innerHTML = "Total sq. ft : " + sqft + "ft²";
+
+
 }, 500);
 
 function updateTotal(percentage) {
@@ -53,7 +56,12 @@ function updateTotal3(percentage) {
   let fcost2 = parseFloat(document.getElementById('fcost2').textContent.split("Rs ")[1]);
   let fcost3 = fcost2 + (fcost2 * percentage);
   document.getElementById("fcost3").innerHTML = " Rs " + fcost3 + ".00";
+  document.getElementById("modalcost").innerHTML = " Rs " + fcost3 + ".00";
+
+
 }
+
+
 
   
   

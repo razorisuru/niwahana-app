@@ -11,7 +11,7 @@ if(!isset($_SESSION['valid'])) {
 include_once("connection.php");
 
 //fetching data in descending order (lastest entry first)
-$result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
+// $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
 
 
 // $query1 = "SELECT * FROM login WHERE id=".$_SESSION['id'];
@@ -44,30 +44,27 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
     <!-- navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navc">
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#">
-                <img src="img/rz.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+            <a class="navbar-brand text-light" href="view.php">
+                <img src="img/logo2.png" alt="Logo" width="40" class="d-inline-block align-text-top">
                 Niwahana
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
-                    <i class="fa-solid fa-bars fa-flip" style="color:#fff; font-size:28px;"></i>
+                    <i class="fa-solid fa-bars" style="color:#fff; font-size:28px;"></i>
                     <!-- <i class="bi bi-list" style="color:#fff; font-size:28px;"></i> -->
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="view.php"><i
-                                class="fa-solid fa-house"></i> Home</a>
-                    </li>
+                    
                     <?php if ($_SESSION['role'] == 'super_admin') {
                         echo"<li class='nav-item'>
                         <a class='nav-link text-light' href='admin/includes/home.php'>Admin Dashboard</a>
                     </li>";
                     }?>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Features</a>
+                        <a class="nav-link text-light" href="#">Emotional Damage</a>
                     </li>
                 </ul>
                 <div class="dropdown">
@@ -76,9 +73,9 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                         Welcome <?php echo $_SESSION['name'] ?>
                     </button>
                     <ul class="btnprofiledropdown dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#profile" href="#">Profile <i class="fa-solid fa-user fa-flip"></i></a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#profile" href="#">Profile <i class="fa-solid fa-user"></i></a></li>
                         <li><a class="dropdown-item" href="logout.php"><span class="btnprofiledropdownlogout">Logout <i
-                                        class="fa-solid fa-arrow-right-from-bracket fa-flip"></i></span> </a></li>
+                                        class="fa-solid fa-arrow-right-from-bracket"></i></span> </a></li>
                     </ul>
                 </div>
             </div>
@@ -88,19 +85,22 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
     <!-- Modal -->
 <div class="modal fade" id="profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content rounded-2 modi">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $_SESSION['name'] ?>'s Profile <i class="fa-solid fa-user fa-flip"></i></h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $_SESSION['name'] ?>'s Profile <i class="fa-solid fa-user"></i></h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="img/rz.png" class="img-thumbnail" width="80" alt="...">
+      <img src="img/logo.png" class="img-thumbnail float-end" width="80" alt="...">
         Full Name : <?php echo $_SESSION['name'] ?><br>
         E-Mail : <?php echo $_SESSION['email'] ?><br>
-        Role : <?php echo $_SESSION['role'] ?><br>
+        Role : <?php echo $_SESSION['role'] ?><br><br>
+        <div class="text-light rounded-1 modalcost" id="sqftmodal"></div>
+        <div class="text-light rounded-1 modalcost" id="modalcost"></div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btnclose float-start" >Print</button>
+        <button type="button" class="btn btnclose" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -203,7 +203,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                         </div>
                         <div class="card-footer">
                             <p>Final cost : <span id="fcost">0.00</span></p>
-                            <p>Designed by Upeksha</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -242,7 +242,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                     </div>
                     <div class="card-footer">
                         <p>Final cost : <span id="fcost2">0.00</span></p>
-                        <p>UI idea by Isuri</p>
+                        
                     </div>
                 </div>
             </div>
@@ -251,7 +251,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
         <!-- phase 4 -->
         <div class="card mt-5 cardc p1css">
             <div class="card-header">
-                <h4 class="text-center">Type of Lands</h4>
+                <h4 class="text-center">Contract Type</h4>
             </div>
             <div class="card-body">
                 <div class="phase4">
