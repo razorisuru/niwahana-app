@@ -40,7 +40,7 @@ if(isset($_POST['submit'])) {
 		
 		if(isset($_SESSION['valid'])) {
         if($_SESSION['role'] == "super_admin") {
-			    header('Location: index.php');	
+			    header('Location: view.php');	
         }else{
 			    header('Location: view.php');	
         }		

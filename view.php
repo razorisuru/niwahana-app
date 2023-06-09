@@ -61,6 +61,11 @@ $result = mysqli_query($mysqli, "SELECT * FROM products ORDER BY id ASC");
                         <a class="nav-link active text-light" aria-current="page" href="view.php"><i
                                 class="fa-solid fa-house"></i> Home</a>
                     </li>
+                    <?php if ($_SESSION['role'] == 'super_admin') {
+                        echo"<li class='nav-item'>
+                        <a class='nav-link text-light' href='admin/includes/home.php'>Admin Dashboard</a>
+                    </li>";
+                    }?>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#">Features</a>
                     </li>

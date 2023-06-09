@@ -44,6 +44,9 @@
 								$result = mysqli_query($mysqli, "SELECT * FROM login");
 								global $role;
 								$role = $_SESSION['role'];
+								if(isset($_SESSION['valid'])) {
+									header('Location: view.php');
+								}
 							?>
 								<div class="row ">
 									<div class="col-md-2"></div>
