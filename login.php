@@ -145,7 +145,7 @@ if(isset($_POST['submit'])) {
 
     <div class="modal fade" id="terms" tabindex="-1" aria-labelledby="terms" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
+            <div class="modal-content rounded-2 modi">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="terms">Terms of use</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -178,7 +178,7 @@ if(isset($_POST['submit'])) {
 
     <div class="modal fade" id="privacy" tabindex="-1" aria-labelledby="privacy" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
+            <div class="modal-content rounded-2 modi">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="privacy">Privacy policy</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
