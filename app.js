@@ -23,7 +23,7 @@ setInterval(function multiply() {
 
   let sqft = ilw1 + ilw2 + ilw3 + ilw4;
   // Cost for 1 square foot
-  let sqft1 = 9500;
+  let sqft1 = 5000;
   let cost = sqft * sqft1;
 
 

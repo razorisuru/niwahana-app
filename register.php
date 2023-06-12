@@ -27,7 +27,7 @@ if(isset($_POST['submit'])) {
 		mysqli_query($mysqli, "INSERT INTO login(name, email, username, password) VALUES('$name', '$email', '$user', md5('$pass'))")
 			or die("Could not execute the insert query.");
 			
-		echo "<div class='h-100 d-flex align-items-center justify-content-center bgg'><div><p class='text-success p-5 fs-3 text-uppercase alert alert-success rounded-5 text-center'><br/>Registration successfully<br/><br/><a class='btn btn-primary' href='login.php'>Login <i
+		echo "<div class='h-100 d-flex align-items-center justify-content-center bgg'><div><p class='text-success p-4 fs-3 text-uppercase alert alert-success rounded-5 text-center'><br/>Registration successfully<br/><br/><a class='btn btn-primary' href='login.php'>Login <i
         class='fa-sharp fa-solid fa-arrow-right-to-bracket'></i></a><br/><br/></p></div></div>";
 	}
 } else {

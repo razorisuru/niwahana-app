@@ -35,7 +35,7 @@ if(isset($_POST['submit'])) {
 			$_SESSION['role'] = $row['role'];
 			$_SESSION['email'] = $row['email'];
 		} else {
-			echo "<div class='h-100 d-flex align-items-center justify-content-center bgg'><div><p class='text-danger p-5 fs-3 text-uppercase alert alert-danger rounded-5 text-center'><br/>Invalid username or password.<br/><br/><a class='btn btn-primary' href='login.php'><i class='bi bi-house-door-fill'></i> Go back</a><br/><br/></p></div></div>";
+			echo "<div class='h-100 d-flex align-items-center justify-content-center bgg'><div><p class='text-danger p-3 fs-3 text-uppercase alert alert-danger rounded-5 text-center'><br/>Invalid username or password.<br/><br/><a class='btn btn-primary' href='login.php'><i class='bi bi-house-door-fill'></i> Go back</a><br/><br/></p></div></div>";
 	
 		}
     
@@ -122,7 +122,19 @@ if(isset($_POST['submit'])) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    RELAX AND TRY TO REMEMBER YOUR PASSWORD!
+                    <div class="">
+                        <h1 class="display-6 text-center p-2 bg-light">Password Reset</h1>
+                        <form action="mail/forgot_password_process.php" method="post">
+                            <div class="row mb-3 justify-content-md-center">
+                                <div class="col-auto">
+                                    <input type="email" name="email" placeholder="Email address" class="form-control">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-primary" name="reset">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
