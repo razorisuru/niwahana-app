@@ -13,3 +13,18 @@
     background-size: cover;
     background-position: center;
 }
+
+.modi {
+    background-color: #7373ff !important;
+    color: #ffffff !important;
+  }
+
+  .btnprofile {
+    background: #5050ff !important;
+    color: white !important;
+  }
+  
+  .btnprofile:hover {
+    background: #ff6162 !important;
+    /* color: #5050ff !important; */
+  }

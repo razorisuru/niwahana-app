@@ -115,22 +115,22 @@ if(isset($_POST['submit'])) {
     </section>
     <!-- Modal -->
     <div class="modal fade" id="forgotpassword" tabindex="-1" aria-labelledby="forgotpassword" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog ">
+            <div class="modal-content rounded-2 modi">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="forgotpassword">Forgot Password</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="">
-                        <h1 class="display-6 text-center p-2 bg-light">Password Reset</h1>
+                        <h1 class=" text-center p-2">Password Reset</h1>
                         <form action="mail/forgot_password_process.php" method="post">
-                            <div class="row mb-3 justify-content-md-center">
+                            <div class="row mb-3 justify-content-center">
                                 <div class="col-auto">
                                     <input type="email" name="email" placeholder="Email address" class="form-control">
                                 </div>
                                 <div class="col-auto">
-                                    <button type="submit" class="btn btn-primary" name="reset">Reset</button>
+                                    <button type="submit" class="btn btnprofile" name="reset">Reset</button>
                                 </div>
                             </div>
                         </form>
