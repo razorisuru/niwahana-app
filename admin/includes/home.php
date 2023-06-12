@@ -28,7 +28,7 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="../../register.php">Emotional Damage</a>
+                        <a class="nav-link text-light" href="../../register.php">Register a user</a>
                     </li>
                 </ul>
                 <div class="dropdown">
@@ -60,8 +60,8 @@
                 <div class="modal-body">
                     <img src="../../img/logo.png" class="img-thumbnail float-end" width="80" alt="...">
                     Full Name : <?php echo $_SESSION['name'] ?><br>
-                    E-Mail : <?php echo $_SESSION['email'] ?><br>
-                    Role : <?php echo $_SESSION['role'] ?><br><br>
+                    User Name : <?php echo $_SESSION['valid'] ?><br>
+                    E-Mail : <?php echo $_SESSION['email'] ?><br><br>
                     <div class="text-light rounded-1 modalcost" id="sqftmodal"></div>
                     <div class="text-light rounded-1 modalcost" id="modalcost"></div>
                 </div>
@@ -78,7 +78,7 @@
 
 
     <div class="container">
-        <table class="table rounded-4 mt-5 table-hover ">
+        <table class="table rounded-4 mt-5 table-hover tablerole">
             <thead>
                 <tr class="tablebg1">
                     <th scope="col">ID</th>
@@ -108,9 +108,9 @@
               echo " <td > {$username}</td>";
               echo " <td >{$role} </td>";
 
-              echo " <td class=''> <a href='view.php?user_id={$id}' class='btn btn-sm btn-outline-light'> <i class='bi bi-eye'></i> </a> </td>";
+              echo " <td class=''> <a href='view.php?user_id={$id}' class='btn btn-sm btn-outline-secondary'> <i class='bi bi-eye'></i> </a> </td>";
 
-              echo " <td class='' > <a href='update.php?edit&user_id={$id}' class='btn btn-sm btn-outline-light'><i class='bi bi-pencil'></i> </a> </td>";
+              echo " <td class='' > <a href='update.php?edit&user_id={$id}' class='btn btn-sm btn-outline-dark'><i class='bi bi-pencil'></i> </a> </td>";
 
               echo " <td  class=''>  <a href='delete.php?delete={$id}'\" onClick=\"return confirm('Are you sure you want to delete?')\" class='btn btn-sm btn-outline-danger'> <i class='bi bi-trash'></i> </a> </td>";
               echo " </tr> ";
@@ -120,7 +120,7 @@
             </tbody>
         </table>
 
-        <table class="table rounded-4 mt-5 rounded-2 table-hover">
+        <table class="table rounded-4 mt-5 table-hover tabledata">
             <thead>
                 <tr class="tablebg1">
                     <th scope="col">ID</th>
@@ -129,7 +129,7 @@
                     <th scope="col">Quantity1</th>
                     <th scope="col">Length1</th>
                     <th scope="col">Width1</th>
-                    <!-- <th scope="col" colspan="3" class="text-center">Operations</th> -->
+                    <th scope="col">Operations</th>
                 </tr>
             </thead>
             <tbody>
@@ -155,6 +155,8 @@
               echo " <td >{$Quantity1} </td>";
               echo " <td >{$Length1} </td>";
               echo " <td >{$Width1} </td>";
+              echo " <td  class=''>  <a href='delete2.php?delete={$id}'\" onClick=\"return confirm('Are you sure you want to delete?')\" class='btn btn-sm btn-outline-danger'> <i class='bi bi-trash'></i> </a> </td>";
+
 
               // echo " <td class=''> <a href='view.php?user_id={$id}' class='btn btn-sm btn-outline-success'> <i class='bi bi-eye'></i> </a> </td>";
 

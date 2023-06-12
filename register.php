@@ -21,13 +21,14 @@ if(isset($_POST['submit'])) {
 	$pass = $_POST['password'];
 	
 	if($user == "" || $pass == "" || $name == "" || $email == "") {
-		echo "<div class='row'><div class='col-md-3'></div><div class='col-md-6 text-center justify-content-center'><p class='text-danger p-1 fs-3 text-uppercase alert alert-danger rounded-5'><br/>All fields should be filled. Either one or many fields are empty.<br/><br/><a class='btn btn-primary' href='register.php'><i class='bi bi-house-door-fill'></i> Go back</a><br/><br/></p></div><div class='col-md-3'></div></div>";
+		echo "<div class='h-100 d-flex align-items-center justify-content-center bgg'><div><p class='text-danger p-1 fs-3 text-uppercase alert alert-danger rounded-5 text-center'><br/>All fields should be filled. Either one or many fields are empty.<br/><br/><a class='btn btn-primary' href='register.php'><i class='bi bi-house-door-fill'></i> Go back</a><br/><br/></p></div></div>";
 	
 	} else {
 		mysqli_query($mysqli, "INSERT INTO login(name, email, username, password) VALUES('$name', '$email', '$user', md5('$pass'))")
 			or die("Could not execute the insert query.");
 			
-		echo "<div class='row'><div class='col-md-3'></div><div class='col-md-6 text-center justify-content-center'><p class='text-success p-1 fs-3 text-uppercase alert alert-success rounded-5'><br/>Registration successfully<br/><br/><a class='btn btn-primary' href='login.php'>Login</a><br/><br/></p></div><div class='col-md-3'></div></div>";
+		echo "<div class='h-100 d-flex align-items-center justify-content-center bgg'><div><p class='text-success p-5 fs-3 text-uppercase alert alert-success rounded-5 text-center'><br/>Registration successfully<br/><br/><a class='btn btn-primary' href='login.php'>Login <i
+        class='fa-sharp fa-solid fa-arrow-right-to-bracket'></i></a><br/><br/></p></div></div>";
 	}
 } else {
 ?>
@@ -73,12 +74,10 @@ if(isset($_POST['submit'])) {
                             </div>
 
                             <!-- Checkbox -->
-                            <div class="form-check d-flex justify-content-center mb-4">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33"
-                                    checked />
-                                <label class="form-check-label" for="form2Example33">
-                                    Accept the aggrement
-                                </label>
+                            <div class="form-check d-flex justify-content-center mt-3 mb-4">
+                            <a href="#!" style="text-decoration: none;" class="" data-bs-toggle="modal"
+                                            data-bs-target="#privacy">Aggrement</a>
+                                
                             </div>
                             <br>
                             <!-- Submit button -->
@@ -116,7 +115,43 @@ if(isset($_POST['submit'])) {
     </section>
     <!-- Section: Design Block -->
 
-
+    <div class="modal fade" id="privacy" tabindex="-1" aria-labelledby="privacy" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="privacy">Privacy policy</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus voluptatibus itaque,
+                    aspernatur laborum odit vitae eveniet neque odio nesciunt, similique reprehenderit minus enim non
+                    architecto nisi necessitatibus earum sit repellendus velit in quod. Aliquam quas, repudiandae
+                    debitis neque atque aliquid qui ab consequatur veritatis quis est incidunt sapiente facilis.
+                    Voluptas beatae pariatur aut explicabo, illum cupiditate sequi delectus dolorum amet. Necessitatibus
+                    veritatis ex vitae asperiores reiciendis totam ratione nesciunt porro, quae, rem eveniet aut
+                    doloremque delectus saepe assumenda at itaque quia quaerat harum. Eaque odit laudantium quo
+                    cupiditate, harum ea consectetur neque, dignissimos numquam repudiandae laborum nesciunt eligendi
+                    dolorum similique deserunt nobis et. In voluptate dolor optio eos quasi unde quod nesciunt enim ea
+                    inventore dolores, molestias ipsum earum quam sunt autem perferendis veniam possimus mollitia error
+                    quo delectus? Itaque libero, quisquam voluptatibus, nemo nulla ab sint nobis hic recusandae
+                    laudantium assumenda repudiandae quibusdam ipsa nostrum natus minus ea magnam explicabo atque
+                    ratione ut debitis tempore exercitationem earum! Assumenda quidem accusamus iusto eum, reprehenderit
+                    error distinctio beatae doloremque cupiditate quia tempore molestias fugit, dolorum saepe explicabo
+                    rerum? Aliquid quibusdam sequi tempore ea suscipit nulla maxime quaerat ipsam commodi labore ducimus
+                    similique iste qui, aspernatur animi explicabo corporis vel. Eveniet. <br><br>
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33"
+                                     />
+                                <label class="form-check-label" for="form2Example33">
+                                    Accept
+                                </label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Accept</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

@@ -57,14 +57,14 @@ include_once("connection.php");
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
+
                     <?php if ($_SESSION['role'] == 'super_admin') {
                         echo"<li class='nav-item'>
                         <a class='nav-link text-light' href='admin/includes/home.php'>Admin Dashboard</a>
                     </li>";
                     }?>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Emotional Damage</a>
+                        <a class="nav-link text-light" href="#">Gallery</a>
                     </li>
                 </ul>
                 <div class="dropdown">
@@ -73,7 +73,8 @@ include_once("connection.php");
                         Welcome <?php echo $_SESSION['name'] ?>
                     </button>
                     <ul class="btnprofiledropdown dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#profile" href="#">Profile <i class="fa-solid fa-user"></i></a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#profile" href="#">Profile
+                                <i class="fa-solid fa-user"></i></a></li>
                         <li><a class="dropdown-item" href="logout.php"><span class="btnprofiledropdownlogout">Logout <i
                                         class="fa-solid fa-arrow-right-from-bracket"></i></span> </a></li>
                     </ul>
@@ -83,28 +84,29 @@ include_once("connection.php");
     </nav>
 
     <!-- Modal -->
-<div class="modal fade" id="profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content rounded-2 modi">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $_SESSION['name'] ?>'s Profile <i class="fa-solid fa-user"></i></h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <img src="img/logo.png" class="img-thumbnail float-end" width="80" alt="...">
-        Full Name : <?php echo $_SESSION['name'] ?><br>
-        E-Mail : <?php echo $_SESSION['email'] ?><br>
-        Role : <?php echo $_SESSION['role'] ?><br><br>
-        <div class="text-light rounded-1 modalcost" id="sqftmodal"></div>
-        <div class="text-light rounded-1 modalcost" id="modalcost"></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btnclose float-start" >Print</button>
-        <button type="button" class="btn btnclose" data-bs-dismiss="modal">Close</button>
-      </div>
+    <div class="modal fade" id="profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-2 modi">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $_SESSION['name'] ?>'s Profile <i
+                            class="fa-solid fa-user"></i></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/logo.png" class="img-thumbnail float-end" width="80" alt="...">
+                    Full Name : <?php echo $_SESSION['name'] ?><br>
+                    User Name : <?php echo $_SESSION['valid'] ?><br>
+                    E-Mail : <?php echo $_SESSION['email'] ?><br><br>
+                    <div class="text-light rounded-1 modalcost" id="sqftmodal"></div>
+                    <div class="text-light rounded-1 modalcost" id="modalcost"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btnclose float-start">Print</button>
+                    <button type="button" class="btn btnclose" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
     <!-- phase 1 -->
     <div class="container main-container">
@@ -154,12 +156,14 @@ include_once("connection.php");
                         <p class="ilw4 po" id="ilw4"></p>
                     </section>
                     <!-- <button class="btn" type="button" onclick="multiply()">Calculate</button> -->
-                    <input class="btn" type="submit" name="submit" value="Enter" />
+                    <div class="mx-auto p-4 mt-2 me-0 float-end">
+                        <input class="btn btnprofile" type="submit" name="submit" value="Enter Values To The Database" />
+                    </div>
                 </form>
-                <div class="card-footer">
-                    <div class="rounded-2" id="sqft"></div>
-                    <div class="rounded-2" id="sqft1"></div>
-                    <div class="rounded-2" id="cost"></div>
+                <div class="text-bg-secondary rounded-2">
+                    <div class="ms-2" id="sqft"></div>
+                    <div class="ms-2" id="sqft1"></div>
+                    <div class="ms-2" id="cost"></div>
                 </div>
 
             </div>
@@ -203,7 +207,7 @@ include_once("connection.php");
                         </div>
                         <div class="card-footer">
                             <p>Final cost : <span id="fcost">0.00</span></p>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -242,7 +246,7 @@ include_once("connection.php");
                     </div>
                     <div class="card-footer">
                         <p>Final cost : <span id="fcost2">0.00</span></p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -313,7 +317,7 @@ include_once("connection.php");
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="app.js"></script>
     <script src="insert.js"></script>
