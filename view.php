@@ -110,6 +110,7 @@ include_once("connection.php");
 
     <!-- phase 1 -->
     <div class="container main-container">
+        
         <div class="card mt-5 p1css cardc">
             <div class="card-header">
                 <h4 class="text-center">Measures</h4>
@@ -126,8 +127,8 @@ include_once("connection.php");
                         <p class="ilw1 po" id="ilw1"></p>
                     </section>
 
-                    <section class="sec2 input-group mt-2">
-                        <div class="input-group-text">Bedroom &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <section class="sec3 input-group mt-2">
+                        <div class="input-group-text">Dining Room</div>
                         <input type="number" class="form-control" id="i2" placeholder="Quantity">
                         <label for="l2"></label>
                         <input type="number" class="form-control" id="l2" placeholder="Length">
@@ -137,7 +138,7 @@ include_once("connection.php");
                     </section>
 
                     <section class="sec3 input-group mt-2">
-                        <div class="input-group-text">Dining Room</div>
+                        <div class="input-group-text">Open Pantry&nbsp;</div>
                         <input type="number" class="form-control" id="i3" placeholder="Quantity">
                         <label for="l3"></label>
                         <input type="number" class="form-control" id="l3" placeholder="Length">
@@ -146,8 +147,8 @@ include_once("connection.php");
                         <p class="ilw3 po" id="ilw3"></p>
                     </section>
 
-                    <section class="sec4 input-group mt-2">
-                        <div class="input-group-text">Bath Room &nbsp;&nbsp;</div>
+                    <section class="sec3 input-group mt-2">
+                        <div class="input-group-text">Kitchen&nbsp;&nbsp;&nbsp;</div>
                         <input type="number" class="form-control" id="i4" placeholder="Quantity">
                         <label for="l4"></label>
                         <input type="number" class="form-control" id="l4" placeholder="Length">
@@ -155,9 +156,81 @@ include_once("connection.php");
                         <input type="number" class="form-control" id="w4" placeholder="Width">
                         <p class="ilw4 po" id="ilw4"></p>
                     </section>
+
+                    <section class="sec2 input-group mt-2">
+                        <div class="input-group-text">Bedroom &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <input type="number" class="form-control" id="i5" placeholder="Quantity">
+                        <label for="l5"></label>
+                        <input type="number" class="form-control" id="l5" placeholder="Length">
+                        <label for="w5"></label>
+                        <input type="number" class="form-control" id="w5" placeholder="Width">
+                        <p class="ilw5 po" id="ilw5"></p>
+                    </section>
+
+                    
+
+                    <section class="sec4 input-group mt-2">
+                        <div class="input-group-text">Bath Room &nbsp;&nbsp;</div>
+                        <input type="number" class="form-control" id="i6" placeholder="Quantity">
+                        <label for="l6"></label>
+                        <input type="number" class="form-control" id="l6" placeholder="Length">
+                        <label for="w6"></label>
+                        <input type="number" class="form-control" id="w6" placeholder="Width">
+                        <p class="ilw6 po" id="ilw6"></p>
+                    </section>
+
+                    <section class="sec3 input-group mt-2">
+                        <div class="input-group-text">Study Lobby&nbsp;</div>
+                        <input type="number" class="form-control" id="i7" placeholder="Quantity">
+                        <label for="l7"></label>
+                        <input type="number" class="form-control" id="l7" placeholder="Length">
+                        <label for="w7"></label>
+                        <input type="number" class="form-control" id="w7" placeholder="Width">
+                        <p class="ilw7 po" id="ilw7"></p>
+                    </section>
+
+                    <section class="sec3 input-group mt-2">
+                        <div class="input-group-text">TV Room</div>
+                        <input type="number" class="form-control" id="i8" placeholder="Quantity">
+                        <label for="l8"></label>
+                        <input type="number" class="form-control" id="l8" placeholder="Length">
+                        <label for="w8"></label>
+                        <input type="number" class="form-control" id="w8" placeholder="Width">
+                        <p class="ilw8 po" id="ilw8"></p>
+                    </section>
+
+                    <section class="sec3 input-group mt-2">
+                        <div class="input-group-text">Closet Room</div>
+                        <input type="number" class="form-control" id="i9" placeholder="Quantity">
+                        <label for="l9"></label>
+                        <input type="number" class="form-control" id="l9" placeholder="Length">
+                        <label for="w9"></label>
+                        <input type="number" class="form-control" id="w9" placeholder="Width">
+                        <p class="ilw9 po" id="ilw9"></p>
+                    </section>
+
+                    <section class="sec3 input-group mt-2">
+                        <div class="input-group-text">Garage</div>
+                        <input type="number" class="form-control" id="i10" placeholder="Quantity">
+                        <label for="l10"></label>
+                        <input type="number" class="form-control" id="l10" placeholder="Length">
+                        <label for="w10"></label>
+                        <input type="number" class="form-control" id="w10" placeholder="Width">
+                        <p class="ilw10 po" id="ilw10"></p>
+                    </section>
+
+                    <section class="sec3 input-group mt-2">
+                        <div class="input-group-text">Other</div>
+                        <input type="number" class="form-control" id="i11" placeholder="Quantity">
+                        <label for="l11"></label>
+                        <input type="number" class="form-control" id="l11" placeholder="Length">
+                        <label for="w11"></label>
+                        <input type="number" class="form-control" id="w11" placeholder="Width">
+                        <p class="ilw11 po" id="ilw11"></p>
+                    </section>
                     <!-- <button class="btn" type="button" onclick="multiply()">Calculate</button> -->
                     <div class="mx-auto p-4 mt-2 me-0 float-end">
-                        <input class="btn btnprofile" type="submit" name="submit" value="Enter Values To The Database" />
+                        <input class="btn btnprofile" type="submit" name="submit" value="Enter" />
                     </div>
                 </form>
                 <div class="text-bg-secondary rounded-2">
@@ -179,36 +252,74 @@ include_once("connection.php");
                     <div class="row container-fluid">
                         <div class="col-md-3">
                             <div class="text-center">
-                                <img src="img/2.1.png" width="400" class="img-fluid image-box" alt="Image 1"
-                                    onclick="updateTotal(0.1)">
-                                <h4 class="mt-4">Ex 4</h4>
+                                <img src="img/2.1.png" width="400" class="img-fluid image-box rounded-4" alt="Image 1"
+                                    onclick="updateTotal(0)">
+                                <h4 class="mt-4">Traditional Theme</h4>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="text-center">
-                                <img src="img/2.2.png" width="400" class="img-fluid image-box" alt="..."
+                                <img src="img/2.2.png" width="400" class="img-fluid image-box rounded-4" alt="..."
                                     onclick="updateTotal(0.2)">
-                                <h4 class="mt-4">Ex 4</h4>
+                                <h4 class="mt-4">Luxury Theme</h4>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="text-center">
-                                <img src="img/2.3.png" width="400" class="img-fluid image-box" alt="..."
-                                    onclick="updateTotal(0.3)">
-                                <h4 class="mt-4">Ex 4</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="text-center">
-                                <img src="img/2.4.png" width="400" class="img-fluid image-box" alt="..."
+                                <img src="img/2.3.png" width="400" class="img-fluid image-box rounded-4" alt="..."
                                     onclick="updateTotal(0.4)">
-                                <h4 class="mt-4">Ex 4</h4>
+                                <h4 class="mt-4">Colonial Theme</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <img src="img/2.4.png" width="400" class="img-fluid image-box rounded-4" alt="..."
+                                    onclick="updateTotal(-0.25)">
+                                <h4 class="mt-4">Echo Theme</h4>
                             </div>
                         </div>
                         <div class="card-footer">
                             <p>Final cost : <span id="fcost">0.00</span></p>
 
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- phase 3 -->
+        <div class="card mt-5 cardc p1css">
+            <div class="card-header">
+                <h4 class="text-center">Design Concepts</h4>
+            </div>
+            <div class="card-body">
+                <div class="phase3">
+                    <div class="row container-fluid">
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <img src="img/3.1.png" width="300" class="img-fluid image-box rounded-4" alt=""
+                                    onclick="updateTotal2(0.3)">
+                                <h4 class="mt-4">Roof</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <img src="img/3.2.png" width="300" class="img-fluid image-box rounded-4" alt="..."
+                                    onclick="updateTotal2(0)">
+                                <h4 class="mt-4">Box Type</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <img src="img/3.3.png" width="300" class="img-fluid image-box rounded-4" alt="..."
+                                    onclick="updateTotal2(0.45)">
+                                <h4 class="mt-4">European</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>Final cost : <span id="fcost2">0.00</span></p>
+
                     </div>
                 </div>
             </div>
@@ -224,28 +335,28 @@ include_once("connection.php");
                     <div class="row container-fluid">
                         <div class="col-md-4">
                             <div class="text-center">
-                                <img src="img/3.1.png" width="300" class="img-fluid image-box" alt=""
-                                    onclick="updateTotal2(0.1)">
+                                <img src="img/3.1.png" width="300" class="img-fluid image-box rounded-4" alt=""
+                                    onclick="updateTotal3(0.1)">
                                 <h4 class="mt-4">Flat Land</h4>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="text-center">
-                                <img src="img/3.2.png" width="300" class="img-fluid image-box" alt="..."
-                                    onclick="updateTotal2(0.1)">
+                                <img src="img/3.2.png" width="300" class="img-fluid image-box rounded-4" alt="..."
+                                    onclick="updateTotal3(0.33)">
                                 <h4 class="mt-4">Upper Slope</h4>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="text-center">
-                                <img src="img/3.3.png" width="300" class="img-fluid image-box" alt="..."
-                                    onclick="updateTotal2(0.2)">
+                                <img src="img/3.3.png" width="300" class="img-fluid image-box rounded-4" alt="..."
+                                    onclick="updateTotal3(0.38)">
                                 <h4 class="mt-4">Lower Slope</h4>
                             </div>
                         </div>
                     </div>
                     <div class="card-footer">
-                        <p>Final cost : <span id="fcost2">0.00</span></p>
+                        <p>Final cost : <span id="fcost3">0.00</span></p>
 
                     </div>
                 </div>
@@ -263,28 +374,25 @@ include_once("connection.php");
                         <form>
                             <div class="row">
                                 <div class="col-lg-3"><label class="radio-inline">
-                                        <input type="radio" name="optradio" checked onclick="updateTotal3(0.1)">
-                                        <b>Daily
-                                            Paid</b><br>
+                                        <input type="radio" name="optradio" checked onclick="updateTotal4(0.3)">
+                                        <b>Fully Constructions</b><br>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore sequi est,
                                         quae corporis cumque! Odit, necessitatibus?
                                     </label></div>
                                 <div class="col-lg-3"><label class="radio-inline">
-                                        <input type="radio" name="optradio" onclick="updateTotal3(0.2)"> <b>Contract
+                                        <input type="radio" name="optradio" onclick="updateTotal4(0)"> <b>Labour Constructions
                                         </b><br>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore sequi est,
                                         quae corporis cumque! Odit, necessitatibus?
                                     </label></div>
                                 <div class="col-lg-3"><label class="radio-inline">
-                                        <input type="radio" name="optradio" onclick="updateTotal3(0.3)"> <b>Piece
-                                            Work</b> <br>
+                                        <input type="radio" name="optradio" onclick="updateTotal4(0.1)"> <b>Labour Constructions With Consultation</b> <br>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore sequi est,
                                         quae corporis cumque! Odit, necessitatibus?
                                     </label>
                                 </div>
                                 <div class="col-lg-3"><label class="radio-inline">
-                                        <input type="radio" name="optradio" onclick="updateTotal3(0.4)"> <b>Through
-                                            Supervisor</b> <br>
+                                        <input type="radio" name="optradio" onclick="updateTotal4(0.02)"> <b>Labour Constructions With Supervision</b> <br>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore sequi est,
                                         quae corporis cumque! Odit, necessitatibus?
                                     </label>
@@ -293,7 +401,7 @@ include_once("connection.php");
                         </form>
                     </div>
                     <div class="card-footer">
-                        <p>Final cost : <span id="fcost3">0.00</span></p>
+                        <p>Final cost : <span id="fcost4">0.00</span></p>
                     </div>
                 </div>
             </div>

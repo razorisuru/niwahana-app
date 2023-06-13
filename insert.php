@@ -23,6 +23,7 @@ $sql = "INSERT INTO details2 (Name, email, Quantity1, Length1, Width1) VALUES ('
 
 if ($conn->query($sql) === true) {
   echo 'Data inserted successfully';
+  
 } else {
   echo 'Error: ' . $sql . '<br>' . $conn->error;
 }
