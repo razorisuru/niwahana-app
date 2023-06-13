@@ -92,7 +92,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id`, `name`, `email`, `role`, `username`, `password`, `code`, `update_time`) VALUES
-(1, 'Isuru Bandara', 'isurubandara318@gmail.com', 'super_admin', 'isuru', 'e10adc3949ba59abbe56e057f20f883e', '2QISJNY8ZR', '2023-06-12 17:48:34'),
+(1, 'Isuru Bandara', 'isurubandara318@gmail.com', 'super_admin', 'isuru', '827ccb0eea8a706c4c34a16891f84e7b', '2QISJNY8ZR', '2023-06-12 17:48:34'),
 (2, 'Idunil Bandara', 'idunilbandara@gmail.com', 'admin', 'idunil', '81dc9bdb52d04dc20036dbd8313ed055', '', '2023-06-12 15:14:01'),
 (3, 'Amindu Sangeeth', 'newtechfounder@gmail.com', 'user', 'ami', '81dc9bdb52d04dc20036dbd8313ed055', 'BNWRMUAJIG', '2023-06-12 16:28:31'),
 (16, 'Isuri Samaranayaka', 'isurisamaranayaka98@gmail.com', '', 'isuri', '81dc9bdb52d04dc20036dbd8313ed055', '8RSKJ07YZ3', '2023-06-12 16:27:30');
