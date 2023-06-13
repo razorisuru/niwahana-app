@@ -120,45 +120,43 @@ include_once("connection.php");
                 <h4 class="text-center">Web Application For NIWAHANA</h4>
             </div>
             <div class="card-body">
-                
 
 
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1"
-                                aria-selected="true">Main Measures</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link btn-success" id="pills-2-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2"
-                                aria-selected="false">Secondary Measures</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3"
-                                type="button" role="tab" aria-controls="pills-3" aria-selected="false">Architecture
-                                Theme</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4"
-                                type="button" role="tab" aria-controls="pills-4" aria-selected="false">Design
-                                Concepts</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5"
-                                type="button" role="tab" aria-controls="pills-5" aria-selected="false">Type of
-                                Lands</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-6-tab" data-bs-toggle="pill" data-bs-target="#pills-6"
-                                type="button" role="tab" aria-controls="pills-6" aria-selected="false">Type of
-                                Lands</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
-                            aria-labelledby="pills-1-tab">
-                            <form id="frm1" method="post" action="">
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btnpill active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1"
+                            type="button" role="tab" aria-controls="pills-1" aria-selected="true">Main Measures</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class=" btn btnpill" id="pills-2-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2"
+                            aria-selected="false">Secondary Measures</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btnpill" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3"
+                            type="button" role="tab" aria-controls="pills-3" aria-selected="false">Architecture
+                            Theme</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btnpill" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4"
+                            type="button" role="tab" aria-controls="pills-4" aria-selected="false">Design
+                            Concepts</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btnpill" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5"
+                            type="button" role="tab" aria-controls="pills-5" aria-selected="false">Type of
+                            Lands</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn btnpill" id="pills-6-tab" data-bs-toggle="pill" data-bs-target="#pills-6"
+                            type="button" role="tab" aria-controls="pills-6" aria-selected="false">Type of
+                            Lands</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                        <form id="frm1" method="post" action="">
                             <section class="sec1 input-group">
                                 <div class="input-group-text">Living Room&nbsp;</div>
                                 <input type="number" class="form-control" id="i1" placeholder="Quantity">
@@ -220,222 +218,221 @@ include_once("connection.php");
                                 <input type="number" class="form-control" id="w6" placeholder="Width">
                                 <p class="ilw6 po" id="ilw6"></p>
                             </section>
-                        </div>
-                        <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
-                            <section class="sec3 input-group mt-2">
-                                <div class="input-group-text">Study Lobby&nbsp;</div>
-                                <input type="number" class="form-control" id="i7" placeholder="Quantity">
-                                <label for="l7"></label>
-                                <input type="number" class="form-control" id="l7" placeholder="Length">
-                                <label for="w7"></label>
-                                <input type="number" class="form-control" id="w7" placeholder="Width">
-                                <p class="ilw7 po" id="ilw7"></p>
-                            </section>
+                    </div>
+                    <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                        <section class="sec3 input-group mt-2">
+                            <div class="input-group-text">Study Lobby&nbsp;</div>
+                            <input type="number" class="form-control" id="i7" placeholder="Quantity">
+                            <label for="l7"></label>
+                            <input type="number" class="form-control" id="l7" placeholder="Length">
+                            <label for="w7"></label>
+                            <input type="number" class="form-control" id="w7" placeholder="Width">
+                            <p class="ilw7 po" id="ilw7"></p>
+                        </section>
 
-                            <section class="sec3 input-group mt-2">
-                                <div class="input-group-text">TV Room</div>
-                                <input type="number" class="form-control" id="i8" placeholder="Quantity">
-                                <label for="l8"></label>
-                                <input type="number" class="form-control" id="l8" placeholder="Length">
-                                <label for="w8"></label>
-                                <input type="number" class="form-control" id="w8" placeholder="Width">
-                                <p class="ilw8 po" id="ilw8"></p>
-                            </section>
+                        <section class="sec3 input-group mt-2">
+                            <div class="input-group-text">TV Room</div>
+                            <input type="number" class="form-control" id="i8" placeholder="Quantity">
+                            <label for="l8"></label>
+                            <input type="number" class="form-control" id="l8" placeholder="Length">
+                            <label for="w8"></label>
+                            <input type="number" class="form-control" id="w8" placeholder="Width">
+                            <p class="ilw8 po" id="ilw8"></p>
+                        </section>
 
-                            <section class="sec3 input-group mt-2">
-                                <div class="input-group-text">Closet Room</div>
-                                <input type="number" class="form-control" id="i9" placeholder="Quantity">
-                                <label for="l9"></label>
-                                <input type="number" class="form-control" id="l9" placeholder="Length">
-                                <label for="w9"></label>
-                                <input type="number" class="form-control" id="w9" placeholder="Width">
-                                <p class="ilw9 po" id="ilw9"></p>
-                            </section>
+                        <section class="sec3 input-group mt-2">
+                            <div class="input-group-text">Closet Room</div>
+                            <input type="number" class="form-control" id="i9" placeholder="Quantity">
+                            <label for="l9"></label>
+                            <input type="number" class="form-control" id="l9" placeholder="Length">
+                            <label for="w9"></label>
+                            <input type="number" class="form-control" id="w9" placeholder="Width">
+                            <p class="ilw9 po" id="ilw9"></p>
+                        </section>
 
-                            <section class="sec3 input-group mt-2">
-                                <div class="input-group-text">Garage</div>
-                                <input type="number" class="form-control" id="i10" placeholder="Quantity">
-                                <label for="l10"></label>
-                                <input type="number" class="form-control" id="l10" placeholder="Length">
-                                <label for="w10"></label>
-                                <input type="number" class="form-control" id="w10" placeholder="Width">
-                                <p class="ilw10 po" id="ilw10"></p>
-                            </section>
+                        <section class="sec3 input-group mt-2">
+                            <div class="input-group-text">Garage</div>
+                            <input type="number" class="form-control" id="i10" placeholder="Quantity">
+                            <label for="l10"></label>
+                            <input type="number" class="form-control" id="l10" placeholder="Length">
+                            <label for="w10"></label>
+                            <input type="number" class="form-control" id="w10" placeholder="Width">
+                            <p class="ilw10 po" id="ilw10"></p>
+                        </section>
 
-                            <section class="sec3 input-group mt-2">
-                                <div class="input-group-text">Home Gym</div>
-                                <input type="number" class="form-control" id="i11" placeholder="Quantity">
-                                <label for="l11"></label>
-                                <input type="number" class="form-control" id="l11" placeholder="Length">
-                                <label for="w11"></label>
-                                <input type="number" class="form-control" id="w11" placeholder="Width">
-                                <p class="ilw11 po" id="ilw11"></p>
-                            </section>
+                        <section class="sec3 input-group mt-2">
+                            <div class="input-group-text">Home Gym</div>
+                            <input type="number" class="form-control" id="i11" placeholder="Quantity">
+                            <label for="l11"></label>
+                            <input type="number" class="form-control" id="l11" placeholder="Length">
+                            <label for="w11"></label>
+                            <input type="number" class="form-control" id="w11" placeholder="Width">
+                            <p class="ilw11 po" id="ilw11"></p>
+                        </section>
 
-                            <section class="sec3 input-group mt-2">
-                                <div class="input-group-text">Other</div>
-                                <input type="number" class="form-control" id="i12" placeholder="Quantity">
-                                <label for="l12"></label>
-                                <input type="number" class="form-control" id="l12" placeholder="Length">
-                                <label for="w12"></label>
-                                <input type="number" class="form-control" id="w12" placeholder="Width">
-                                <p class="ilw12 po" id="ilw12"></p>
-                            </section>
-                        </div>
-                        <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
-                            <div class="phase2">
-                                <div class="row container-fluid">
-                                    <div class="col-md-3">
-                                        <div class="text-center">
-                                            <img src="img/2.1.png" width="400" class="img-fluid image-box rounded-4"
-                                                alt="Image 1" onclick="updateTotal(0)">
-                                            <h4 class="mt-4">Traditional Theme</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="text-center">
-                                            <img src="img/2.2.png" width="400" class="img-fluid image-box rounded-4"
-                                                alt="..." onclick="updateTotal(0.2)">
-                                            <h4 class="mt-4">Luxury Theme</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="text-center">
-                                            <img src="img/2.3.png" width="400" class="img-fluid image-box rounded-4"
-                                                alt="..." onclick="updateTotal(0.4)">
-                                            <h4 class="mt-4">Colonial Theme</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="text-center">
-                                            <img src="img/2.4.png" width="400" class="img-fluid image-box rounded-4"
-                                                alt="..." onclick="updateTotal(-0.25)">
-                                            <h4 class="mt-4">Echo Theme</h4>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <p>Final cost : <span id="fcost">0.00</span></p>
-
+                        <section class="sec3 input-group mt-2">
+                            <div class="input-group-text">Other</div>
+                            <input type="number" class="form-control" id="i12" placeholder="Quantity">
+                            <label for="l12"></label>
+                            <input type="number" class="form-control" id="l12" placeholder="Length">
+                            <label for="w12"></label>
+                            <input type="number" class="form-control" id="w12" placeholder="Width">
+                            <p class="ilw12 po" id="ilw12"></p>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                        <div class="phase2">
+                            <div class="row container-fluid">
+                                <div class="col-md-3">
+                                    <div class="text-center">
+                                        <img src="img/2.1.png" width="400" class="img-fluid image-box rounded-4"
+                                            alt="Image 1" onclick="updateTotal(0)">
+                                        <h4 class="mt-4">Traditional Theme</h4>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
-                            <div class="phase3">
-                                <div class="row container-fluid">
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-                                            <img src="img/3.1.png" width="300" class="img-fluid image-box rounded-4"
-                                                alt="" onclick="updateTotal2(0.3)">
-                                            <h4 class="mt-4">Roof</h4>
-                                        </div>
+                                <div class="col-md-3">
+                                    <div class="text-center">
+                                        <img src="img/2.2.png" width="400" class="img-fluid image-box rounded-4"
+                                            alt="..." onclick="updateTotal(0.2)">
+                                        <h4 class="mt-4">Luxury Theme</h4>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-                                            <img src="img/3.2.png" width="300" class="img-fluid image-box rounded-4"
-                                                alt="..." onclick="updateTotal2(0)">
-                                            <h4 class="mt-4">Box Type</h4>
-                                        </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center">
+                                        <img src="img/2.3.png" width="400" class="img-fluid image-box rounded-4"
+                                            alt="..." onclick="updateTotal(0.4)">
+                                        <h4 class="mt-4">Colonial Theme</h4>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-                                            <img src="img/3.3.png" width="300" class="img-fluid image-box rounded-4"
-                                                alt="..." onclick="updateTotal2(0.45)">
-                                            <h4 class="mt-4">European</h4>
-                                        </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center">
+                                        <img src="img/2.4.png" width="400" class="img-fluid image-box rounded-4"
+                                            alt="..." onclick="updateTotal(-0.25)">
+                                        <h4 class="mt-4">Echo Theme</h4>
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                    <p>Final cost : <span id="fcost2">0.00</span></p>
+                                    <p>Final cost : <span id="fcost">0.00</span></p>
 
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
-                            <div class="phase3">
-                                <div class="row container-fluid">
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-                                            <img src="img/3.1.png" width="300" class="img-fluid image-box rounded-4"
-                                                alt="" onclick="updateTotal3(0.1)">
-                                            <h4 class="mt-4">Flat Land</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-                                            <img src="img/3.2.png" width="300" class="img-fluid image-box rounded-4"
-                                                alt="..." onclick="updateTotal3(0.33)">
-                                            <h4 class="mt-4">Upper Slope</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="text-center">
-                                            <img src="img/3.3.png" width="300" class="img-fluid image-box rounded-4"
-                                                alt="..." onclick="updateTotal3(0.38)">
-                                            <h4 class="mt-4">Lower Slope</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <p>Final cost : <span id="fcost3">0.00</span></p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab">
-                            <div class="phase4">
-                                <div class="container">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-lg-3"><label class="radio-inline">
-                                                    <input type="radio" name="optradio" checked
-                                                        onclick="updateTotal4(0.3)">
-                                                    <b>Fully Constructions</b><br>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore
-                                                    sequi est,
-                                                    quae corporis cumque! Odit, necessitatibus?
-                                                </label></div>
-                                            <div class="col-lg-3"><label class="radio-inline">
-                                                    <input type="radio" name="optradio" onclick="updateTotal4(0)">
-                                                    <b>Labour Constructions
-                                                    </b><br>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore
-                                                    sequi est,
-                                                    quae corporis cumque! Odit, necessitatibus?
-                                                </label></div>
-                                            <div class="col-lg-3"><label class="radio-inline">
-                                                    <input type="radio" name="optradio" onclick="updateTotal4(0.1)">
-                                                    <b>Labour Constructions With Consultation</b> <br>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore
-                                                    sequi est,
-                                                    quae corporis cumque! Odit, necessitatibus?
-                                                </label>
-                                            </div>
-                                            <div class="col-lg-3"><label class="radio-inline">
-                                                    <input type="radio" name="optradio" onclick="updateTotal4(0.02)">
-                                                    <b>Labour Constructions With Supervision</b> <br>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore
-                                                    sequi est,
-                                                    quae corporis cumque! Odit, necessitatibus?
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="card-footer">
-                                    <p>Final cost : <span id="fcost4">0.00</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- <button class="btn" type="button" onclick="multiply()">Calculate</button> -->
-                    <div class="mx-auto p-4 mt-0 me-0 float-end">
-                        <input class="btn btnprofile" type="submit" name="submit" value="Enter" />
+                    <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                        <div class="phase3">
+                            <div class="row container-fluid">
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <img src="img/3.1.png" width="300" class="img-fluid image-box rounded-4" alt=""
+                                            onclick="updateTotal2(0.3)">
+                                        <h4 class="mt-4">Roof</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <img src="img/3.2.png" width="300" class="img-fluid image-box rounded-4"
+                                            alt="..." onclick="updateTotal2(0)">
+                                        <h4 class="mt-4">Box Type</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <img src="img/3.3.png" width="300" class="img-fluid image-box rounded-4"
+                                            alt="..." onclick="updateTotal2(0.45)">
+                                        <h4 class="mt-4">European</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p>Final cost : <span id="fcost2">0.00</span></p>
+
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+                        <div class="phase3">
+                            <div class="row container-fluid">
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <img src="img/3.1.png" width="300" class="img-fluid image-box rounded-4" alt=""
+                                            onclick="updateTotal3(0.1)">
+                                        <h4 class="mt-4">Flat Land</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <img src="img/3.2.png" width="300" class="img-fluid image-box rounded-4"
+                                            alt="..." onclick="updateTotal3(0.33)">
+                                        <h4 class="mt-4">Upper Slope</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <img src="img/3.3.png" width="300" class="img-fluid image-box rounded-4"
+                                            alt="..." onclick="updateTotal3(0.38)">
+                                        <h4 class="mt-4">Lower Slope</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p>Final cost : <span id="fcost3">0.00</span></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab">
+                        <div class="phase4">
+                            <div class="container">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-3"><label class="radio-inline">
+                                                <input type="radio" name="optradio" checked onclick="updateTotal4(0.3)">
+                                                <b>Fully Constructions</b><br>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore
+                                                sequi est,
+                                                quae corporis cumque! Odit, necessitatibus?
+                                            </label></div>
+                                        <div class="col-lg-3"><label class="radio-inline">
+                                                <input type="radio" name="optradio" onclick="updateTotal4(0)">
+                                                <b>Labour Constructions
+                                                </b><br>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore
+                                                sequi est,
+                                                quae corporis cumque! Odit, necessitatibus?
+                                            </label></div>
+                                        <div class="col-lg-3"><label class="radio-inline">
+                                                <input type="radio" name="optradio" onclick="updateTotal4(0.1)">
+                                                <b>Labour Constructions With Consultation</b> <br>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore
+                                                sequi est,
+                                                quae corporis cumque! Odit, necessitatibus?
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3"><label class="radio-inline">
+                                                <input type="radio" name="optradio" onclick="updateTotal4(0.02)">
+                                                <b>Labour Constructions With Supervision</b> <br>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore
+                                                sequi est,
+                                                quae corporis cumque! Odit, necessitatibus?
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <p>Final cost : <span id="fcost4">0.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <button class="btn" type="button" onclick="multiply()">Calculate</button> -->
+                <div class="mx-auto p-4 mt-0 me-0 float-end">
+                    <input class="btn btnprofile" type="submit" name="submit" value="Enter" />
+                </div>
                 </form>
                 <div class="text-bg-secondary mt-4 rounded-2">
                     <div class="ms-2" id="sqft"></div>

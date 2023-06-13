@@ -87,3 +87,18 @@
   background: #ff91916b !important;
 }
 
+.btnpill {
+  /* background: #5050ff !important; */
+  color: #5050ff !important;
+}
+
+.btnpill:active {
+  /* background: #5050ff !important; */
+  color: #ff0000 !important;
+}
+
+.btnpill:hover {
+  background: #ff6162 !important;
+  color: white !important;
+}
+
