@@ -430,9 +430,9 @@ include_once("connection.php");
                 </div>
 
                 <!-- <button class="btn" type="button" onclick="multiply()">Calculate</button> -->
-                <div class="mx-auto p-4 mt-0 me-0 float-end">
+                <!-- <div class="mx-auto p-4 mt-0 me-0 float-end">
                     <input class="btn btnprofile" type="submit" name="submit" value="Enter" />
-                </div>
+                </div> -->
                 </form>
                 <div class="text-bg-secondary mt-4 rounded-2">
                     <div class="ms-2" id="sqft"></div>
