@@ -48,6 +48,10 @@ setInterval(function multiply() {
   let l11 = document.getElementById("l11").value;
   let w11 = document.getElementById("w11").value;
 
+  let i12 = document.getElementById("i12").value;
+  let l12 = document.getElementById("l12").value;
+  let w12 = document.getElementById("w12").value;
+
   
   let ilw1 = i1 * l1 * w1;
   let ilw2 = i2 * l2 * w2;
@@ -59,9 +63,10 @@ setInterval(function multiply() {
   let ilw8 = i8 * l8 * w8;
   let ilw9 = i9 * l9 * w9;
   let ilw10 = i10 * l10 * w10;
-  let ilw11 = i11 * l10 * w11;
+  let ilw11 = i11 * l11 * w11;
+  let ilw12 = i12 * l12 * w12;
 
-  var sqft = ilw1 + ilw2 + ilw3 + ilw4  + ilw5 + ilw6 + ilw7  + ilw8 + ilw9 + ilw10 + ilw11;
+  var sqft = ilw1 + ilw2 + ilw3 + ilw4  + ilw5 + ilw6 + ilw7  + ilw8 + ilw9 + ilw10 + ilw11 + ilw12;
   // Cost for 1 square foot
   var sqft1 = 9500;
   var cost = sqft * sqft1;
@@ -78,6 +83,7 @@ setInterval(function multiply() {
   document.getElementById("ilw9").innerHTML = " = " + " " + ilw9 + "ft²";
   document.getElementById("ilw10").innerHTML = " = " + " " + ilw10 + "ft²";
   document.getElementById("ilw11").innerHTML = " = " + " " + ilw11 + "ft²";
+  document.getElementById("ilw12").innerHTML = " = " + " " + ilw12 + "ft²";
 
   document.getElementById("sqft").innerHTML = "Total sq. ft : " + sqft + "ft²";
   document.getElementById("sqft1").innerHTML = "Cost for 1 sq. ft : Rs " + sqft1 + ".00" + " (Standard Rating)";
