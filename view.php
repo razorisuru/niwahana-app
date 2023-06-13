@@ -188,7 +188,7 @@ include_once("connection.php");
                             </section>
 
                             <section class="sec3 input-group mt-2">
-                                <div class="input-group-text">Kitchen&nbsp;&nbsp;&nbsp;</div>
+                                <div class="input-group-text">Kitchen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                 <input type="number" class="form-control" id="i4" placeholder="Quantity">
                                 <label for="l4"></label>
                                 <input type="number" class="form-control" id="l4" placeholder="Length">
@@ -231,7 +231,7 @@ include_once("connection.php");
                         </section>
 
                         <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">TV Room</div>
+                            <div class="input-group-text">TV Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                             <input type="number" class="form-control" id="i8" placeholder="Quantity">
                             <label for="l8"></label>
                             <input type="number" class="form-control" id="l8" placeholder="Length">
@@ -251,7 +251,7 @@ include_once("connection.php");
                         </section>
 
                         <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">Garage</div>
+                            <div class="input-group-text">Garage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                             <input type="number" class="form-control" id="i10" placeholder="Quantity">
                             <label for="l10"></label>
                             <input type="number" class="form-control" id="l10" placeholder="Length">
@@ -261,7 +261,7 @@ include_once("connection.php");
                         </section>
 
                         <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">Home Gym</div>
+                            <div class="input-group-text">Home Gym&nbsp;&nbsp;</div>
                             <input type="number" class="form-control" id="i11" placeholder="Quantity">
                             <label for="l11"></label>
                             <input type="number" class="form-control" id="l11" placeholder="Length">
@@ -271,7 +271,7 @@ include_once("connection.php");
                         </section>
 
                         <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">Other</div>
+                            <div class="input-group-text">Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                             <input type="number" class="form-control" id="i12" placeholder="Quantity">
                             <label for="l12"></label>
                             <input type="number" class="form-control" id="l12" placeholder="Length">
@@ -285,28 +285,28 @@ include_once("connection.php");
                             <div class="row container-fluid">
                                 <div class="col-md-3">
                                     <div class="text-center">
-                                        <img src="img/2.1.png" width="400" class="img-fluid image-box rounded-4"
+                                        <img src="img/2.1.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="Image 1" onclick="updateTotal(0)">
                                         <h4 class="mt-4">Traditional Theme</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="text-center">
-                                        <img src="img/2.2.png" width="400" class="img-fluid image-box rounded-4"
+                                        <img src="img/2.2.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="..." onclick="updateTotal(0.2)">
                                         <h4 class="mt-4">Luxury Theme</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="text-center">
-                                        <img src="img/2.3.png" width="400" class="img-fluid image-box rounded-4"
+                                        <img src="img/2.3.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="..." onclick="updateTotal(0.4)">
                                         <h4 class="mt-4">Colonial Theme</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="text-center">
-                                        <img src="img/2.4.png" width="400" class="img-fluid image-box rounded-4"
+                                        <img src="img/2.4.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="..." onclick="updateTotal(-0.25)">
                                         <h4 class="mt-4">Echo Theme</h4>
                                     </div>
@@ -324,21 +324,21 @@ include_once("connection.php");
                             <div class="row container-fluid">
                                 <div class="col-md-4">
                                     <div class="text-center">
-                                        <img src="img/3.1.png" width="300" class="img-fluid image-box rounded-4" alt=""
+                                        <img src="img/3.1.png" width="250" class="img-fluid image-box rounded-4" alt=""
                                             onclick="updateTotal2(0.3)">
                                         <h4 class="mt-4">Roof</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center">
-                                        <img src="img/3.2.png" width="300" class="img-fluid image-box rounded-4"
+                                        <img src="img/3.2.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="..." onclick="updateTotal2(0)">
                                         <h4 class="mt-4">Box Type</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center">
-                                        <img src="img/3.3.png" width="300" class="img-fluid image-box rounded-4"
+                                        <img src="img/3.3.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="..." onclick="updateTotal2(0.45)">
                                         <h4 class="mt-4">European</h4>
                                     </div>
@@ -356,21 +356,21 @@ include_once("connection.php");
                             <div class="row container-fluid">
                                 <div class="col-md-4">
                                     <div class="text-center">
-                                        <img src="img/3.1.png" width="300" class="img-fluid image-box rounded-4" alt=""
+                                        <img src="img/3.1.png" width="250" class="img-fluid image-box rounded-4" alt=""
                                             onclick="updateTotal3(0.1)">
                                         <h4 class="mt-4">Flat Land</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center">
-                                        <img src="img/3.2.png" width="300" class="img-fluid image-box rounded-4"
+                                        <img src="img/3.2.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="..." onclick="updateTotal3(0.33)">
                                         <h4 class="mt-4">Upper Slope</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center">
-                                        <img src="img/3.3.png" width="300" class="img-fluid image-box rounded-4"
+                                        <img src="img/3.3.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="..." onclick="updateTotal3(0.38)">
                                         <h4 class="mt-4">Lower Slope</h4>
                                     </div>
