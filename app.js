@@ -72,54 +72,57 @@ setInterval(function multiply() {
   var cost = sqft * sqft1;
 
 
-  document.getElementById("ilw1").innerHTML = " = " + " " + ilw1 + "ft²";
-  document.getElementById("ilw2").innerHTML = " = " + " " + ilw2 + "ft²";
-  document.getElementById("ilw3").innerHTML = " = " + " " + ilw3 + "ft²";
-  document.getElementById("ilw4").innerHTML = " = " + " " + ilw4 + "ft²";
-  document.getElementById("ilw5").innerHTML = " = " + " " + ilw5 + "ft²";
-  document.getElementById("ilw6").innerHTML = " = " + " " + ilw6 + "ft²";
-  document.getElementById("ilw7").innerHTML = " = " + " " + ilw7 + "ft²";
-  document.getElementById("ilw8").innerHTML = " = " + " " + ilw8 + "ft²";
-  document.getElementById("ilw9").innerHTML = " = " + " " + ilw9 + "ft²";
-  document.getElementById("ilw10").innerHTML = " = " + " " + ilw10 + "ft²";
-  document.getElementById("ilw11").innerHTML = " = " + " " + ilw11 + "ft²";
-  document.getElementById("ilw12").innerHTML = " = " + " " + ilw12 + "ft²";
+  document.getElementById("ilw1").innerHTML = " = " + " " + ilw1.toFixed(2) + "ft²";
+  document.getElementById("ilw2").innerHTML = " = " + " " + ilw2.toFixed(2) + "ft²";
+  document.getElementById("ilw3").innerHTML = " = " + " " + ilw3.toFixed(2) + "ft²";
+  document.getElementById("ilw4").innerHTML = " = " + " " + ilw4.toFixed(2) + "ft²";
+  document.getElementById("ilw5").innerHTML = " = " + " " + ilw5.toFixed(2) + "ft²";
+  document.getElementById("ilw6").innerHTML = " = " + " " + ilw6.toFixed(2) + "ft²";
+  document.getElementById("ilw7").innerHTML = " = " + " " + ilw7.toFixed(2) + "ft²";
+  document.getElementById("ilw8").innerHTML = " = " + " " + ilw8.toFixed(2) + "ft²";
+  document.getElementById("ilw9").innerHTML = " = " + " " + ilw9.toFixed(2) + "ft²";
+  document.getElementById("ilw10").innerHTML = " = " + " " + ilw10.toFixed(2)+ "ft²";
+  document.getElementById("ilw11").innerHTML = " = " + " " + ilw11.toFixed(2) + "ft²";
+  document.getElementById("ilw12").innerHTML = " = " + " " + ilw12.toFixed(2) + "ft²";
 
-  document.getElementById("sqft").innerHTML = "Total sq. ft : " + sqft + "ft²";
-  document.getElementById("sqft1").innerHTML = "Cost for 1 sq. ft : Rs " + sqft1 + ".00" + " (Standard Rating)";
-  document.getElementById("cost").innerHTML = "Total Cost : Rs " + cost + ".00";
-
-  document.getElementById("sqftmodal").innerHTML = "Total sq. ft : " + sqft + "ft²";
+  document.getElementById("sqft").innerHTML = "Total sq. ft: " + sqft.toFixed(2) + " ft²";
+  document.getElementById("sqft1").innerHTML = "Cost for 1 sq. ft: Rs " + sqft1.toFixed(2) + " (Standard Rating)";
+  document.getElementById("cost").innerHTML = "Total Cost: Rs " + cost.toFixed(2);
+  
+  document.getElementById("sqftmodal").innerHTML = "Total sq. ft: " + sqft.toFixed(2) + " ft²";
+  
 
 
 }, 500);
 
+function formatCurrency(value) {
+  return "Rs " + value.toFixed(2);
+}
+
 function updateTotal(percentage) {
   let cost = parseFloat(document.getElementById('cost').textContent.split("Rs ")[1]);
   let fcost = cost + (cost * percentage);
-  document.getElementById("fcost").innerHTML = " Rs " + fcost + ".00";
+  document.getElementById("fcost").innerHTML = formatCurrency(fcost);
 }
 
 function updateTotal2(percentage) {
   let fcost = parseFloat(document.getElementById('fcost').textContent.split("Rs ")[1]);
   let fcost2 = fcost + (fcost * percentage);
-  document.getElementById("fcost2").innerHTML = " Rs " + fcost2 + ".00";
+  document.getElementById("fcost2").innerHTML = formatCurrency(fcost2);
 }
+
 function updateTotal3(percentage) {
   let fcost2 = parseFloat(document.getElementById('fcost2').textContent.split("Rs ")[1]);
   let fcost3 = fcost2 + (fcost2 * percentage);
-  document.getElementById("fcost3").innerHTML = " Rs " + fcost3 + ".00";
+  document.getElementById("fcost3").innerHTML = formatCurrency(fcost3);
 }
 
 function updateTotal4(percentage) {
   let fcost3 = parseFloat(document.getElementById('fcost3').textContent.split("Rs ")[1]);
   let fcost4 = fcost3 + (fcost3 * percentage);
-  document.getElementById("fcost4").innerHTML = " Rs " + fcost4 + ".00";
-  document.getElementById("modalcost").innerHTML = " Rs " + fcost4 + ".00";
-
-
+  document.getElementById("fcost4").innerHTML = formatCurrency(fcost4);
+  document.getElementById("modalcost").innerHTML = formatCurrency(fcost4);
 }
-
 
 
   
