@@ -85,11 +85,12 @@ setInterval(function multiply() {
   document.getElementById("ilw11").innerHTML = " = " + " " + ilw11 + "ft²";
   document.getElementById("ilw12").innerHTML = " = " + " " + ilw12 + "ft²";
 
-  document.getElementById("sqft").innerHTML = "Total sq. ft : " + sqft + "ft²";
-  document.getElementById("sqft1").innerHTML = "Cost for 1 sq. ft : Rs " + sqft1 + ".00" + " (Standard Rating)";
-  document.getElementById("cost").innerHTML = "Total Cost : Rs " + cost + ".00";
-
-  document.getElementById("sqftmodal").innerHTML = "Total sq. ft : " + sqft + "ft²";
+  document.getElementById("sqft").innerHTML = "Total sq. ft: " + sqft.toFixed(2) + " ft²";
+  document.getElementById("sqft1").innerHTML = "Cost for 1 sq. ft: Rs " + sqft1.toFixed(2) + " (Standard Rating)";
+  document.getElementById("cost").innerHTML = "Total Cost: Rs " + cost.toFixed(2);
+  
+  document.getElementById("sqftmodal").innerHTML = "Total sq. ft: " + sqft.toFixed(2) + " ft²";
+  
 
 
 }, 500);
@@ -97,28 +98,41 @@ setInterval(function multiply() {
 function updateTotal(percentage) {
   let cost = parseFloat(document.getElementById('cost').textContent.split("Rs ")[1]);
   let fcost = cost + (cost * percentage);
-  document.getElementById("fcost").innerHTML = " Rs " + fcost + ".00";
+  document.getElementById("fcost").innerHTML = " Rs " + fcost.toFixed(2);
 }
 
 function updateTotal2(percentage) {
   let fcost = parseFloat(document.getElementById('fcost').textContent.split("Rs ")[1]);
   let fcost2 = fcost + (fcost * percentage);
-  document.getElementById("fcost2").innerHTML = " Rs " + fcost2 + ".00";
+  document.getElementById("fcost2").innerHTML = " Rs " + fcost2.toFixed(2);
 }
 function updateTotal3(percentage) {
   let fcost2 = parseFloat(document.getElementById('fcost2').textContent.split("Rs ")[1]);
   let fcost3 = fcost2 + (fcost2 * percentage);
-  document.getElementById("fcost3").innerHTML = " Rs " + fcost3 + ".00";
+  document.getElementById("fcost3").innerHTML = " Rs " + fcost3.toFixed(2);
 }
 
 function updateTotal4(percentage) {
   let fcost3 = parseFloat(document.getElementById('fcost3').textContent.split("Rs ")[1]);
   let fcost4 = fcost3 + (fcost3 * percentage);
-  document.getElementById("fcost4").innerHTML = " Rs " + fcost4 + ".00";
-  document.getElementById("modalcost").innerHTML = " Rs " + fcost4 + ".00";
+  document.getElementById("fcost4").innerHTML = " Rs " + fcost4.toFixed(2);
+  document.getElementById("modalcost").innerHTML = " Rs " + fcost4.toFixed(2);
 
 
 }
+
+
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
 
 
 
