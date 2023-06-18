@@ -36,7 +36,7 @@ if(isset($_POST['submit'])) {
 			$_SESSION['email'] = $row['email'];
 		} else {
 			echo "<div class='h-100 d-flex align-items-center justify-content-center bgg'><div><p class='text-danger p-3 fs-3 text-uppercase alert alert-danger rounded-5 text-center'><br/>Invalid username or password.<br/><br/><a class='btn btn-primary' href='login.php'><i class='bi bi-house-door-fill'></i> Go back</a><br/><br/></p></div></div>";
-	
+            
 		}
     
 		

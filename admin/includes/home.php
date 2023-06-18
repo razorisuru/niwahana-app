@@ -126,8 +126,8 @@
                     <th scope="col">ID</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Quantity1</th>
-                    <th scope="col">Length1</th>
+                    <th scope="col">Living Room</th>
+                    <th scope="col">SqFt</th>
                     <th scope="col">Width1</th>
                     <th scope="col">Operations</th>
                 </tr>
@@ -136,7 +136,7 @@
                 <tr>
 
                     <?php
-            $query="SELECT * FROM details2";               // SQL query to fetch all table data
+            $query="SELECT * FROM details";               // SQL query to fetch all table data
             $view_users= mysqli_query($conn,$query);    // sending the query to the database
 
             //  displaying all the data retrieved from the database using while loop
@@ -144,18 +144,18 @@
               $id = $row['id'];                
               $name = $row['Name'];        
               $email = $row['email'];         
-              $Quantity1 = $row['Quantity1'];        
-              $Length1 = $row['Length1'];        
+              $i1 = $row['LivingRooms'];        
+              $lw1 = $row['LivingRoomSqFt'];        
               $Width1 = $row['Width1'];        
 
               echo "<tr class='tablebg2'>";
               echo " <th scope='row' >{$id}</th>";
               echo " <td > {$name}</td>";
               echo " <td > <a href = 'mailto:{$email}'>{$email}</a></td>";
-              echo " <td >{$Quantity1} </td>";
-              echo " <td >{$Length1} </td>";
+              echo " <td >{$i1} </td>";
+              echo " <td >{$lw1} </td>";
               echo " <td >{$Width1} </td>";
-              echo " <td  class=''>  <a href='delete2.php?delete={$id}'\" onClick=\"return confirm('Are you sure you want to delete?')\" class='btn btn-sm btn-outline-danger'> <i class='bi bi-trash'></i> </a> </td>";
+              echo " <td  class=''>  <a href='delete.php?delete={$id}'\" onClick=\"return confirm('Are you sure you want to delete?')\" class='btn btn-sm btn-outline-danger'> <i class='bi bi-trash'></i> </a> </td>";
 
 
               // echo " <td class=''> <a href='view.php?user_id={$id}' class='btn btn-sm btn-outline-success'> <i class='bi bi-eye'></i> </a> </td>";

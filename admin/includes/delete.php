@@ -12,7 +12,7 @@
          $userid= $_GET['delete'];
 
          // SQL query to delete data from user table where id = $userid
-         $query = "DELETE FROM login WHERE id = {$userid}"; 
+         $query = "DELETE FROM details WHERE id = {$userid}"; 
          $delete_query= mysqli_query($conn, $query);
          header("Location: home.php");
      }
