@@ -370,21 +370,21 @@ include_once("connection.php");
                             <div class="row container-fluid">
                                 <div class="col-md-4">
                                     <div class="text-center">
-                                        <img src="img/3.1.png" width="250" class="img-fluid image-box rounded-4" alt=""
+                                        <img src="img/4.1.png" width="250" class="img-fluid image-box rounded-4" alt=""
                                             onclick="updateTotal3(0.1)">
                                         <h4 class="mt-4">Flat Land</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center">
-                                        <img src="img/3.2.png" width="250" class="img-fluid image-box rounded-4"
+                                        <img src="img/4.2.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="..." onclick="updateTotal3(0.33)">
                                         <h4 class="mt-4">Upper Slope</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center">
-                                        <img src="img/3.3.png" width="250" class="img-fluid image-box rounded-4"
+                                        <img src="img/4.3.png" width="250" class="img-fluid image-box rounded-4"
                                             alt="..." onclick="updateTotal3(0.38)">
                                         <h4 class="mt-4">Lower Slope</h4>
                                     </div>
