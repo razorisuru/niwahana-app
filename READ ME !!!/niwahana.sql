@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2023 at 04:53 PM
+-- Generation Time: Jun 18, 2023 at 04:08 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -31,44 +31,38 @@ CREATE TABLE `details` (
   `id` int(10) NOT NULL,
   `Name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `LivingRooms` int(255) NOT NULL,
-  `LivingRoomSqFt` int(255) NOT NULL,
-  `Bedrooms` int(255) NOT NULL,
-  `BedroomsSqFt` int(255) NOT NULL,
-  `DiningRooms` int(255) NOT NULL,
-  `DiningRoomSqft` int(255) NOT NULL,
-  `BathRooms` int(255) NOT NULL,
-  `BathRoomSqFt` int(255) NOT NULL
+  `LivingRooms` decimal(65,0) DEFAULT NULL,
+  `LivingRoomSqFt` decimal(65,0) NOT NULL,
+  `DiningRooms` decimal(65,0) NOT NULL,
+  `DiningRoomSqft` decimal(65,0) NOT NULL,
+  `OpenPantrys` decimal(65,0) NOT NULL,
+  `OpenPantrySqFt` decimal(65,0) NOT NULL,
+  `Kitchens` decimal(65,0) NOT NULL,
+  `KitchenSqFt` decimal(65,0) NOT NULL,
+  `Bedrooms` decimal(65,0) NOT NULL,
+  `BedroomSqFt` decimal(65,0) NOT NULL,
+  `BathRooms` decimal(65,0) NOT NULL,
+  `BathRoomSqFt` decimal(65,0) NOT NULL,
+  `StudyLobbies` decimal(65,0) NOT NULL,
+  `StudyLobbySqFt` decimal(65,0) NOT NULL,
+  `TVRooms` decimal(65,0) NOT NULL,
+  `TVRoomSqFt` decimal(65,0) NOT NULL,
+  `ClosetRooms` decimal(65,0) NOT NULL,
+  `ClosetRoomSqFt` decimal(65,0) NOT NULL,
+  `Garages` decimal(65,0) NOT NULL,
+  `GarageSqFt` decimal(65,0) NOT NULL,
+  `HomeGyms` decimal(65,0) NOT NULL,
+  `HomeGymSqFt` decimal(65,0) NOT NULL,
+  `Others` decimal(65,0) NOT NULL,
+  `OtherSqFt` decimal(65,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `details`
 --
 
-INSERT INTO `details` (`id`, `Name`, `email`, `LivingRooms`, `LivingRoomSqFt`, `Bedrooms`, `BedroomsSqFt`, `DiningRooms`, `DiningRoomSqft`, `BathRooms`, `BathRoomSqFt`) VALUES
-(11, '$client', '$clientmail', 1, 2, 0, 0, 0, 0, 0, 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `details2`
---
-
-CREATE TABLE `details2` (
-  `id` int(10) NOT NULL,
-  `Name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `Quantity1` int(255) NOT NULL,
-  `Length1` int(255) NOT NULL,
-  `Width1` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `details2`
---
-
-INSERT INTO `details2` (`id`, `Name`, `email`, `Quantity1`, `Length1`, `Width1`) VALUES
-(27, 'Isuru Bandara', 'isurubandara318@gmail.com', 2, 2, 2);
+INSERT INTO `details` (`id`, `Name`, `email`, `LivingRooms`, `LivingRoomSqFt`, `DiningRooms`, `DiningRoomSqft`, `OpenPantrys`, `OpenPantrySqFt`, `Kitchens`, `KitchenSqFt`, `Bedrooms`, `BedroomSqFt`, `BathRooms`, `BathRoomSqFt`, `StudyLobbies`, `StudyLobbySqFt`, `TVRooms`, `TVRoomSqFt`, `ClosetRooms`, `ClosetRoomSqFt`, `Garages`, `GarageSqFt`, `HomeGyms`, `HomeGymSqFt`, `Others`, `OtherSqFt`) VALUES
+(24, 'Isuru Bandara', 'isurubandara318@gmail.com', '2', '4', '2', '4', '2', '4', '2', '4', '2', '4', '2', '4', '2', '4', '2', '4', '2', '4', '2', '4', '2', '4', '2', '4');
 
 -- --------------------------------------------------------
 
@@ -92,7 +86,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id`, `name`, `email`, `role`, `username`, `password`, `code`, `update_time`) VALUES
-(1, 'Isuru Bandara', 'isurubandara318@gmail.com', 'super_admin', 'isuru', '827ccb0eea8a706c4c34a16891f84e7b', '2QISJNY8ZR', '2023-06-12 17:48:34'),
+(1, 'Isuru Bandara', 'isurubandara318@gmail.com', 'super_admin', 'isuru', '827ccb0eea8a706c4c34a16891f84e7b', 'GLKW7EC4JA', '2023-06-13 16:30:05'),
 (2, 'Idunil Bandara', 'idunilbandara@gmail.com', 'admin', 'idunil', '81dc9bdb52d04dc20036dbd8313ed055', '', '2023-06-12 15:14:01'),
 (3, 'Amindu Sangeeth', 'newtechfounder@gmail.com', 'user', 'ami', '81dc9bdb52d04dc20036dbd8313ed055', 'BNWRMUAJIG', '2023-06-12 16:28:31'),
 (16, 'Isuri Samaranayaka', 'isurisamaranayaka98@gmail.com', '', 'isuri', '81dc9bdb52d04dc20036dbd8313ed055', '8RSKJ07YZ3', '2023-06-12 16:27:30');
@@ -105,12 +99,6 @@ INSERT INTO `login` (`id`, `name`, `email`, `role`, `username`, `password`, `cod
 -- Indexes for table `details`
 --
 ALTER TABLE `details`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `details2`
---
-ALTER TABLE `details2`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -127,13 +115,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `details`
 --
 ALTER TABLE `details`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT for table `details2`
---
-ALTER TABLE `details2`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `login`

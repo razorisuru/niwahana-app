@@ -125,13 +125,14 @@ include_once("connection.php");
 
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="btn btnpill active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1"
-                            type="button" role="tab" aria-controls="pills-1" aria-selected="true">Main Measures</button>
+                        <button class="btn btnpill active" id="pills-1-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1"
+                            aria-selected="true">Main Measures</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class=" btn btnpill" id="pills-2-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2"
-                            aria-selected="false">Secondary Measures</button>
+                        <button class=" btn btnpill" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2"
+                            type="button" role="tab" aria-controls="pills-2" aria-selected="false">Secondary
+                            Measures</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="btn btnpill" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3"
@@ -188,7 +189,8 @@ include_once("connection.php");
                             </section>
 
                             <section class="sec3 input-group mt-2">
-                                <div class="input-group-text">Kitchen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                <div class="input-group-text">
+                                    Kitchen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                 <input type="number" class="form-control" id="i4" placeholder="Quantity">
                                 <label for="l4"></label>
                                 <input type="number" class="form-control" id="l4" placeholder="Length">
@@ -218,67 +220,79 @@ include_once("connection.php");
                                 <input type="number" class="form-control" id="w6" placeholder="Width">
                                 <p class="ilw6 po" id="ilw6"></p>
                             </section>
+                            <!-- <div class="mx-auto p-4 mt-3 me-3 float-end">
+                                <input class="btn btnprofile" type="submit" name="submit" value="Enter" />
+                            </div> -->
+                        </form>
                     </div>
                     <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
-                        <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">Study Lobby&nbsp;</div>
-                            <input type="number" class="form-control" id="i7" placeholder="Quantity">
-                            <label for="l7"></label>
-                            <input type="number" class="form-control" id="l7" placeholder="Length">
-                            <label for="w7"></label>
-                            <input type="number" class="form-control" id="w7" placeholder="Width">
-                            <p class="ilw7 po" id="ilw7"></p>
-                        </section>
+                        <form id="frm1" method="post" action="">
+                            <section class="sec3 input-group mt-2">
+                                <div class="input-group-text">Study Lobby&nbsp;</div>
+                                <input type="number" class="form-control" id="i7" placeholder="Quantity">
+                                <label for="l7"></label>
+                                <input type="number" class="form-control" id="l7" placeholder="Length">
+                                <label for="w7"></label>
+                                <input type="number" class="form-control" id="w7" placeholder="Width">
+                                <p class="ilw7 po" id="ilw7"></p>
+                            </section>
 
-                        <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">TV Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                            <input type="number" class="form-control" id="i8" placeholder="Quantity">
-                            <label for="l8"></label>
-                            <input type="number" class="form-control" id="l8" placeholder="Length">
-                            <label for="w8"></label>
-                            <input type="number" class="form-control" id="w8" placeholder="Width">
-                            <p class="ilw8 po" id="ilw8"></p>
-                        </section>
+                            <section class="sec3 input-group mt-2">
+                                <div class="input-group-text">TV Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                <input type="number" class="form-control" id="i8" placeholder="Quantity">
+                                <label for="l8"></label>
+                                <input type="number" class="form-control" id="l8" placeholder="Length">
+                                <label for="w8"></label>
+                                <input type="number" class="form-control" id="w8" placeholder="Width">
+                                <p class="ilw8 po" id="ilw8"></p>
+                            </section>
 
-                        <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">Closet Room</div>
-                            <input type="number" class="form-control" id="i9" placeholder="Quantity">
-                            <label for="l9"></label>
-                            <input type="number" class="form-control" id="l9" placeholder="Length">
-                            <label for="w9"></label>
-                            <input type="number" class="form-control" id="w9" placeholder="Width">
-                            <p class="ilw9 po" id="ilw9"></p>
-                        </section>
+                            <section class="sec3 input-group mt-2">
+                                <div class="input-group-text">Closet Room</div>
+                                <input type="number" class="form-control" id="i9" placeholder="Quantity">
+                                <label for="l9"></label>
+                                <input type="number" class="form-control" id="l9" placeholder="Length">
+                                <label for="w9"></label>
+                                <input type="number" class="form-control" id="w9" placeholder="Width">
+                                <p class="ilw9 po" id="ilw9"></p>
+                            </section>
 
-                        <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">Garage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                            <input type="number" class="form-control" id="i10" placeholder="Quantity">
-                            <label for="l10"></label>
-                            <input type="number" class="form-control" id="l10" placeholder="Length">
-                            <label for="w10"></label>
-                            <input type="number" class="form-control" id="w10" placeholder="Width">
-                            <p class="ilw10 po" id="ilw10"></p>
-                        </section>
+                            <section class="sec3 input-group mt-2">
+                                <div class="input-group-text">
+                                    Garage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <input type="number" class="form-control" id="i10" placeholder="Quantity">
+                                <label for="l10"></label>
+                                <input type="number" class="form-control" id="l10" placeholder="Length">
+                                <label for="w10"></label>
+                                <input type="number" class="form-control" id="w10" placeholder="Width">
+                                <p class="ilw10 po" id="ilw10"></p>
+                            </section>
 
-                        <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">Home Gym&nbsp;&nbsp;</div>
-                            <input type="number" class="form-control" id="i11" placeholder="Quantity">
-                            <label for="l11"></label>
-                            <input type="number" class="form-control" id="l11" placeholder="Length">
-                            <label for="w11"></label>
-                            <input type="number" class="form-control" id="w11" placeholder="Width">
-                            <p class="ilw11 po" id="ilw11"></p>
-                        </section>
+                            <section class="sec3 input-group mt-2">
+                                <div class="input-group-text">Home Gym&nbsp;&nbsp;</div>
+                                <input type="number" class="form-control" id="i11" placeholder="Quantity">
+                                <label for="l11"></label>
+                                <input type="number" class="form-control" id="l11" placeholder="Length">
+                                <label for="w11"></label>
+                                <input type="number" class="form-control" id="w11" placeholder="Width">
+                                <p class="ilw11 po" id="ilw11"></p>
+                            </section>
 
-                        <section class="sec3 input-group mt-2">
-                            <div class="input-group-text">Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                            <input type="number" class="form-control" id="i12" placeholder="Quantity">
-                            <label for="l12"></label>
-                            <input type="number" class="form-control" id="l12" placeholder="Length">
-                            <label for="w12"></label>
-                            <input type="number" class="form-control" id="w12" placeholder="Width">
-                            <p class="ilw12 po" id="ilw12"></p>
-                        </section>
+                            <section class="sec3 input-group mt-2">
+                                <div class="input-group-text">
+                                    Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                <input type="number" class="form-control" id="i12" placeholder="Quantity">
+                                <label for="l12"></label>
+                                <input type="number" class="form-control" id="l12" placeholder="Length">
+                                <label for="w12"></label>
+                                <input type="number" class="form-control" id="w12" placeholder="Width">
+                                <p class="ilw12 po" id="ilw12"></p>
+                            </section>
+                            <div class="mx-auto p-4 mt-3 me-3 float-end">
+                                <button class="btn btnprofile" id="btn_enter" name="btn_enter">Enter</button>
+                            </div>
+                        </form>
                     </div>
                     <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
                         <div class="phase2">
@@ -430,10 +444,7 @@ include_once("connection.php");
                 </div>
 
                 <!-- <button class="btn" type="button" onclick="multiply()">Calculate</button> -->
-                <!-- <div class="mx-auto p-4 mt-0 me-0 float-end">
-                    <input class="btn btnprofile" type="submit" name="submit" value="Enter" />
-                </div> -->
-                </form>
+
                 <div class="text-bg-secondary mt-4 rounded-2">
                     <div class="ms-2" id="sqft"></div>
                     <div class="ms-2" id="sqft1"></div>
