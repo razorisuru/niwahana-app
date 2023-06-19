@@ -85,6 +85,10 @@ setInterval(function multiply() {
   document.getElementById("ilw11").innerHTML = " = " + " " + ilw11.toFixed(2) + "ft²";
   document.getElementById("ilw12").innerHTML = " = " + " " + ilw12.toFixed(2) + "ft²";
 
+  document.getElementById("sqftgg").innerHTML = "Total sq. ft: " + sqft.toFixed(2) + " ft²";
+  document.getElementById("sqft1gg").innerHTML = "Cost for 1 sq. ft: Rs " + sqft1.toFixed(2) + " (Standard Rating)";
+  document.getElementById("costgg").innerHTML = "Total Cost: Rs " + cost.toFixed(2);
+
   document.getElementById("sqft").innerHTML = "Total sq. ft: " + sqft.toFixed(2) + " ft²";
   document.getElementById("sqft1").innerHTML = "Cost for 1 sq. ft: Rs " + sqft1.toFixed(2) + " (Standard Rating)";
   document.getElementById("cost").innerHTML = "Total Cost: Rs " + cost.toFixed(2);

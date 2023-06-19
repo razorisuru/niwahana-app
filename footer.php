@@ -1,3 +1,4 @@
+<script src="bootstrap/js/bootstrap.popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="bootstrap/js/bootstrap.bundle.js"></script>

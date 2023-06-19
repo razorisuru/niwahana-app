@@ -128,8 +128,8 @@
                     <th scope="col">Email</th>
                     <th scope="col">Living Room</th>
                     <th scope="col">SqFt</th>
-                    <th scope="col">Width1</th>
-                    <th scope="col">Operations</th>
+                    <!-- <th scope="col">Width1</th> -->
+                    <th scope="col" class="text-center">Operations</th>
                 </tr>
             </thead>
             <tbody>
@@ -146,7 +146,7 @@
               $email = $row['email'];         
               $i1 = $row['LivingRooms'];        
               $lw1 = $row['LivingRoomSqFt'];        
-              $Width1 = $row['Width1'];        
+            //   $Width1 = $row['Width1'];        
 
               echo "<tr class='tablebg2'>";
               echo " <th scope='row' >{$id}</th>";
@@ -154,8 +154,8 @@
               echo " <td > <a href = 'mailto:{$email}'>{$email}</a></td>";
               echo " <td >{$i1} </td>";
               echo " <td >{$lw1} </td>";
-              echo " <td >{$Width1} </td>";
-              echo " <td  class=''>  <a href='delete.php?delete={$id}'\" onClick=\"return confirm('Are you sure you want to delete?')\" class='btn btn-sm btn-outline-danger'> <i class='bi bi-trash'></i> </a> </td>";
+            //   echo " <td >{$Width1} </td>";
+              echo " <td  class=''>  <a href='delete.php?delete={$id}'\" onClick=\"return confirm('Are you sure you want to delete?')\" class='btn btn-sm btn-outline-danger text-center'> <i class='bi bi-trash'></i> </a> </td>";
 
 
               // echo " <td class=''> <a href='view.php?user_id={$id}' class='btn btn-sm btn-outline-success'> <i class='bi bi-eye'></i> </a> </td>";
