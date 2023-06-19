@@ -58,7 +58,7 @@ include_once("connection.php");
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <?php if ($_SESSION['role'] == 'super_admin') {
+                    <?php if ($_SESSION['role'] == 'super_admin' || $_SESSION['role'] == 'admin') {
                         echo"<li class='nav-item'>
                         <a class='nav-link text-light' href='admin/includes/home.php'>Admin Dashboard</a>
                     </li>";
