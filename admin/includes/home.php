@@ -155,7 +155,7 @@
               echo " <td >{$i1} </td>";
               echo " <td >{$lw1} </td>";
             //   echo " <td >{$Width1} </td>";
-              echo " <td  class=''>  <a href='delete.php?delete={$id}'\" onClick=\"return confirm('Are you sure you want to delete?')\" class='btn btn-sm btn-outline-danger text-center'> <i class='bi bi-trash'></i> </a> </td>";
+              echo " <td  class=''>  <a href='delete2.php?delete={$id}'\" onClick=\"return confirm('Are you sure you want to delete?')\" class='btn btn-sm btn-outline-danger text-center'> <i class='bi bi-trash'></i> </a> </td>";
 
 
               // echo " <td class=''> <a href='view.php?user_id={$id}' class='btn btn-sm btn-outline-success'> <i class='bi bi-eye'></i> </a> </td>";
