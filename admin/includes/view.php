@@ -6,7 +6,7 @@
 </head>
 
 <?php
-  if ($_SESSION['role'] == 'super_admin'){
+  if ($_SESSION['role'] == 'super_admin' || $_SESSION['role'] == 'admin'){
 ?>
 
 <h1 class="text-center">User Details</h1>
